@@ -1,0 +1,11 @@
+﻿src/app/pricing/page.tsx(16,10): error TS2739: Type '{ event_category: string; }' is missing the following properties from type '{ className: any; heading: any; subheading: any; event_category: any; }': className, heading, subheading
+src/app/recruiter-lp/page.tsx(22,21): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/app/recruiter-lp/page.tsx(528,26): error TS18048: 'row.vals' is possibly 'undefined'.
+src/app/recruiter-lp/page.tsx(575,51): error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'SetStateAction<null>'.
+  Type 'number' is not assignable to type 'SetStateAction<null>'.
+src/app/resume-builder/page.tsx(57,63): error TS2339: Property 'gtag' does not exist on type 'Window & typeof globalThis'.
+src/app/resume-builder/page.tsx(58,28): error TS2339: Property 'gtag' does not exist on type 'Window & typeof globalThis'.
+src/app/resume-builder/page.tsx(349,59): error TS2339: Property 'gtag' does not exist on type 'Window & typeof globalThis'.
+src/app/resume-builder/page.tsx(350,24): error TS2339: Property 'gtag' does not exist on type 'Window & typeof globalThis'.
+src/components/pseo/JobFeed.tsx(240,25): error TS2322: Type '{ key: string; id: string; role: string; company: string; location: string; experience: string; salary: string; tags: string[]; isNew: boolean; description: string; createdAt: string | undefined; matchScore: number | undefined; companyLogo: string | undefined; }' is not assignable to type 'IntrinsicAttributes & JobCardProps'.
+  Property 'isNew' does not exist on type 'IntrinsicAttributes & JobCardProps'.

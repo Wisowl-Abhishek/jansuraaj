@@ -1,0 +1,21 @@
+.header {
+    padding: 1rem 0;
+  }
+  .header .header__logo {
+    background: url("/assets/logo.png") no-repeat center;
+    width: 144px;
+    height: 40px;
+  }
+  .header .header__navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .header .header__navigation li {
+    gap: 40px;
+  }
+  .header .header__navigation ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+  }

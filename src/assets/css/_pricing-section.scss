@@ -1,0 +1,19 @@
+.pricing {
+    background: $brand-midnight;
+  }
+  .pricing .pricing-plans {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .pricing .pricing-plans .plan {
+    background: $brand-navy;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #ffffff;
+    width: 300px;
+  }
+  .pricing .pricing-plans .plan .price {
+    color: $accent-gold;
+    font-size: 1.5rem;
+  }

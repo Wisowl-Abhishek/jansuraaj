@@ -1,0 +1,15 @@
+// WisOwl Brand Color Variables
+// To retheme the app, update values here — all SCSS files consume these vars.
+// Tailwind utilities use the matching @theme block in src/index.css.
+
+$primary-color:   #1800ad; // WisOwl Indigo — backgrounds, bars, panels
+$secondary-color: #2a10c7; // Soft Violet — hover states, gradient endpoints
+$theme-color:     #1800ad; // alias of primary
+
+$accent-gold:     #ffde59; // WisOwl Gold — CTA highlights, arrow icons
+$accent-amber:    #febd59; // WisOwl Amber — badges, starburst, stars
+
+$brand-navy:      #0d1136; // Deep Navy — cinematic/dramatic backgrounds
+$brand-midnight:  #03051a; // Midnight — ultra-dark with vignette
+$brand-violet:    #2a10c7; // Soft Violet — hover states
+$brand-slate:     #1400a0; // Slate Indigo — pattern overlays, grid lines

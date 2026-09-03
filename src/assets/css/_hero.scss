@@ -1,0 +1,78 @@
+.hero {
+    text-align: center;
+  }
+  .hero .hero__logo {
+    width: 110px;
+    margin: 0 auto 0.8rem;
+    @media all and (max-width: 640px) {
+      width: 80px;
+    }
+  }
+
+  .hero .hero__tag-line {
+    font-size: 74px;
+    font-weight: 600;
+    line-height: 74px;
+    
+    span {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 300;
+      
+      @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 30px;
+        display: block;
+        margin-top: 10px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+      line-height: 35px;
+    }
+  }
+  .hero .hero__feature-list ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    // margin-bottom: 3rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      text-align: left;
+      margin-left: 40px;
+      // margin-bottom: 30px;
+    }
+  }
+  .hero .hero__feature-list ul li {
+    // background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    position: relative;
+    // font-size: 18px;
+    text-align: left;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -1.2rem;
+      width: 24px;
+      height: 24px;
+      background: url('../images/tick.svg') no-repeat center center;
+      background-size: contain;
+      transform: translateY(-50%);
+    }
+  }
+  .hero .hero__signup-btn {
+    font-size: 18px;
+    padding: 14px 40px;
+    // color: #000;
+    @media all and (max-width: 767px) {
+      width: 100%;
+      font-size: 16px;
+    }
+  }

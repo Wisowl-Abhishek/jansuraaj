@@ -1,0 +1,89 @@
+"use client";
+import React, { useEffect, useRef } from "react";
+
+const EyeFollowOwl = ({ className }: { className?: string }) => {
+  const svgRef = useRef<SVGSVGElement | null>(null);
+
+  useEffect(() => {
+    const svg = svgRef.current;
+    if (!svg) return;
+
+    const leftEye = svg.querySelector("#left-eye") as SVGPathElement;
+    const rightEye = svg.querySelector("#right-eye") as SVGPathElement;
+
+    if (!leftEye || !rightEye) return;
+
+    const leftOrigin = { x: 17, y: 22 };
+    const rightOrigin = { x: 37, y: 22 };
+    const maxMovement = 2;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const { clientX, clientY } = e;
+      const rect = svg.getBoundingClientRect();
+
+      const updateEye = (eye: SVGPathElement, origin: { x: number; y: number }) => {
+        const dx = clientX - (rect.left + origin.x);
+        const dy = clientY - (rect.top + origin.y);
+        const angle = Math.atan2(dy, dx);
+        const x = Math.cos(angle) * maxMovement;
+        const y = Math.sin(angle) * maxMovement;
+        eye.setAttribute("transform", `translate(${x}, ${y})`);
+      };
+
+      updateEye(leftEye, leftOrigin);
+      updateEye(rightEye, rightOrigin);
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
+  return (
+    <div className="flex items-center justify-center">
+      <svg
+        ref={svgRef}
+        viewBox="0 0 55 59"
+        width="100%"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.2"
+        className={className}
+      >
+        <defs>
+          <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+            <path d="m0.52 0.24h53.57v58.75h-53.57z" />
+          </clipPath>
+        </defs>
+
+        <style>{`.a{fill:#fff}`}</style>
+
+        {/* LEFT EYE */}
+        <path
+          id="left-eye"
+          d="m16.9 26.6q1.1 0 2.2-0.4 1-0.4 1.8-1.2 0.8-0.8 1.2-1.9 0.4-1 0.4-2.1 0-1.1-0.4-2.2-0.4-1-1.2-1.8-0.8-0.8-1.8-1.2-1.1-0.4-2.2-0.4-1.1 0-2.1 0.4-1.1 0.4-1.9 1.2-0.8 0.8-1.2 1.8-0.4 1.1-0.4 2.2 0 1.1 0.4 2.1 0.4 1.1 1.2 1.9 0.8 0.8 1.9 1.2 1 0.4 2.1 0.4z"
+          fill="none"
+          stroke="#fff"
+          strokeWidth="2"
+        />
+
+        {/* RIGHT EYE */}
+        <path
+          id="right-eye"
+          d="m37.7 26.6q1.1 0 2.2-0.4 1-0.4 1.8-1.2 0.8-0.8 1.2-1.9 0.4-1 0.4-2.1 0-1.1-0.4-2.2-0.4-1-1.2-1.8-0.8-0.8-1.8-1.2-1.1-0.4-2.2-0.4-1.1 0-2.1 0.4-1.1 0.4-1.9 1.2-0.7 0.8-1.2 1.8-0.4 1.1-0.4 2.2 0 1.1 0.4 2.1 0.5 1.1 1.2 1.9 0.8 0.8 1.9 1.2 1 0.4 2.1 0.4z"
+          fill="none"
+          stroke="#fff"
+          strokeWidth="2"
+        />
+
+        {/* REMAINDER OF THE SVG OWL BODY */}
+        <g clipPath="url(#cp1)">
+          <path
+            className="a"
+            d="m10.8 46.8h-2.8v2h4.9q0.1 0 0.1 0c4 3.8 8.4 6.3 11.3 8 1.8 1.1 2.9 1.7 3.2 2.2 0.3-0.5 1.4-1.1 3.1-2.1 2.9-1.7 7.3-4.3 11.3-8.1q0.1 0 0.1 0h4.3v-2h-2.3l0.1-0.1c6.7-7.3 10.2-15.9 10-25.1-0.2-7-2.4-14.2-6.7-21.4q-0.9 1-2 1.9-1 0.9-2.1 1.7-1.1 0.8-2.3 1.5-1.2 0.7-2.4 1.3-1.3 0.6-2.7 1-1.4 0.4-2.8 0.7-1.4 0.3-2.8 0.5-1.4 0.1-2.8 0.1h-0.1q-0.4 0-0.7 0-0.1 0-0.1 0-1.3 0-2.6-0.2-1.4-0.1-2.7-0.4-1.3-0.3-2.5-0.8-1.3-0.4-2.5-0.9-1.3-0.6-2.5-1.3-1.2-0.6-2.3-1.4-1.1-0.8-2.2-1.7-1-0.9-1.9-2c-10.2 17.2-9 34.1 3.3 46.5zm-3-43.2v-0.1l0.1 0.1q0.9 0.7 1.8 1.4 0.9 0.7 1.8 1.3 1 0.6 2 1.2 1 0.5 2 0.9l0.3 0.1-0.3 0.1c-1.5 0.1-3 0.6-4.3 1.3q-2.1 1-3.6 2.7-1.6 1.8-2.4 3.9c-0.5 1.5-0.8 3-0.8 4.5 0 6.9 5.6 12.5 12.5 12.5 2.4 0 4.7-0.7 6.8-2h0.1q0.3 0.4 0.6 0.9 0.4 0.4 0.7 0.8 0.4 0.4 0.7 0.8 0.4 0.4 0.8 0.8l0.7 0.9 0.8-0.9c0 0 1.1-1.3 2.8-3.3q0.8 0.5 1.6 0.9 0.8 0.3 1.7 0.6 0.8 0.3 1.7 0.4 0.9 0.1 1.8 0.1c6.9 0 12.5-5.6 12.5-12.5 0-1.5-0.2-3-0.8-4.5-0.5-1.4-1.3-2.7-2.3-3.8-1-1.2-2.2-2.1-3.6-2.8-1.3-0.7-2.8-1.2-4.3-1.3l-0.2-0.1 0.2-0.1q1-0.4 2-1 1-0.5 2-1.1 1-0.6 1.9-1.3 0.9-0.7 1.8-1.4v-0.1l0.1 0.1c3.2 6 4.9 12.1 5 18.1 0.2 9.3-3.5 18-10.9 25.1h-27.4c-6.2-5.6-9.8-12.3-10.9-19.7-1-7.5 0.7-15.4 5-23.5zm9.1 6.9c4 0 7.8 2.4 9.5 6.1l0.9 1.9 0.9-1.9c1.8-3.7 5.5-6.1 9.5-6.1 5.8 0 10.5 4.7 10.5 10.5 0 5.8-4.7 10.5-10.5 10.5-4 0-7.7-2.4-9.5-6.1l-0.9-1.9-0.9 1.9c-1.7 3.7-5.5 6.1-9.5 6.1-5.8 0-10.5-4.7-10.5-10.5 0-5.8 4.7-10.5 10.5-10.5zm7.4 0.3q1.7 0.1 3.1 0.1c0.9 0 1.8 0 2.9-0.1h0.2l-0.2 0.1q-0.4 0.3-0.8 0.7-0.4 0.3-0.8 0.7-0.4 0.4-0.7 0.8-0.3 0.4-0.6 0.9h-0.1-0.1q-0.3-0.5-0.6-0.9-0.3-0.4-0.7-0.8-0.4-0.4-0.8-0.7-0.4-0.4-0.9-0.7l-0.2-0.2zm14.5 38.2c-3.3 2.7-6.5 4.6-8.9 6l-0.3 0.2-0.4 0.2q-0.9 0.6-1.6 1h-0.1q-0.7-0.4-1.6-1l-0.9-0.5c-2.4-1.4-5.6-3.3-8.8-5.9l-0.1-0.2h22.8zm-9.4-18.6h-0.1c-0.8 1-1.4 1.8-1.8 2.3h-0.1q-0.3-0.3-0.5-0.6-0.2-0.3-0.5-0.6-0.2-0.2-0.5-0.5-0.2-0.3-0.4-0.6h-0.1l0.1-0.1q0.6-0.6 1.2-1.2l0.7-0.8 0.7 0.8q0.6 0.6 1.2 1.2z"
+          />
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+export default EyeFollowOwl;

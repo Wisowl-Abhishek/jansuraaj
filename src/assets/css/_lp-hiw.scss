@@ -1,0 +1,63 @@
+.find-jobs-faster {
+    // margin: 0;.
+    // padding: 10px 0 0;
+    @media all and (max-width: 767px) {
+        // padding-top: 40px;
+    }
+}
+
+.find-jobs-faster .steps {
+    max-width: 890px;
+    margin: 70px auto 0;
+
+    @media all and (max-width: 767px) {
+        margin-top: 40px;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        gap: 50px;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+        }
+
+        &:nth-child(2n) {
+            @media screen and (min-width: 768px) {
+                flex-direction: row-reverse;
+            }
+        }
+        
+        img {
+            border-radius: 20px;
+            max-width: 100%;
+            @media screen and (max-width: 767px) {
+                width: 70%;   
+                display: inline; 
+
+            }
+        }
+        > div {
+            flex: 1;
+            p:first-child {
+                font-size: 30px;
+                font-weight: 500;
+                margin-bottom: 16px;
+                line-height: 26px;
+                @media all and (max-width: 767px) {
+                    font-size: 26px;
+                    margin-bottom: 10px;
+                    margin-top: 5px;
+                }
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

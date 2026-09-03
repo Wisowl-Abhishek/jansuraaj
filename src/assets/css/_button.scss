@@ -1,0 +1,21 @@
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button--primary {
+  background: $accent-gold;
+  color: $brand-midnight;
+}
+
+.button--inverted {
+  background: #ffffff;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+}
+
+.button--no-background {
+  background: none;
+  border: 1px solid transparent;
+}

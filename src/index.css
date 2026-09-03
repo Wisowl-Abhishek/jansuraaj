@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+/*
+ * WisOwl Brand Theme
+ * ─────────────────────────────────────────────────────────────────
+ * All brand color tokens live here. To retheme the app, update the
+ * values in this @theme block — every Tailwind utility that
+ * references bg-brand-*, text-brand-*, border-brand-* etc. will
+ * pick up the new values automatically.
+ *
+ * Full token reference: src/lib/theme.ts
+ * ─────────────────────────────────────────────────────────────────
+ */
+@theme {
+  --color-brand-indigo:   #1800ad; /* Primary — backgrounds, bars, panels  */
+  --color-brand-violet:   #2a10c7; /* Hover states, gradient endpoints       */
+  --color-brand-slate:    #1400a0; /* Muted — pattern overlays, grid lines   */
+  --color-brand-navy:     #0d1136; /* Dark bg — cinematic backgrounds        */
+  --color-brand-midnight: #03051a; /* Ultra-dark — with vignette             */
+  --color-brand-gold:     #ffde59; /* Accent 1 — CTA highlights, arrows      */
+  --color-brand-amber:    #febd59; /* Accent 2 — badges, starburst, stars    */
+}
+
+:root {
+  /* CSS custom properties for use in SCSS, inline styles, non-Tailwind CSS */
+  /* --brand-indigo:   #342d74; */
+  --brand-indigo:   #0d1136;
+  --brand-violet:   #2a10c7;
+  --brand-slate:    #1400a0;
+  --brand-navy:     #0d1136;
+  --brand-midnight: #03051a;
+  --brand-gold:     #ffde59;
+  --brand-amber:    #febd59;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Brand accent text helper */
+.primary-color {
+  color: var(--brand-indigo);
+}
+
+/* Inner-page background — white with a soft indigo tint */
+.inner-page {
+  background: #ffffff;
+  background: linear-gradient(333deg, #ffffff 70%, #ffffff 0%, #ebe8ff 100%);
+  background-attachment: fixed;
+  background-position: 0 0;
+}
+
+/* Hero / main gradient — midnight → indigo → soft violet */
+.home-gradient {
+  background: var(--brand-indigo);
+  /* background: linear-gradient(315deg, var(--brand-midnight) 33%, var(--brand-indigo) 0%, var(--brand-violet) 100%); */
+}
+
+/* Inner-page navigation bar */
+.innerpage-nav {
+  background: var(--brand-indigo);
+}
+
+.responsive-iframe {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.show-for-small {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .show-for-small {
+    display: block;
+  }
+}
+
+.hide-for-small {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .hide-for-small {
+    display: none;
+  }
+}
