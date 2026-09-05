@@ -97,7 +97,7 @@ export default function ResumeEnhancerPage() {
         {/* HIGHLIGHTS SECTION */}
         <section className="w-full max-w-6xl mx-auto py-16 px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-extrabold mb-12">
-                Why 5000+ Job Seekers Choose WisOwl
+                Why 5000+ Job Seekers Choose Jan Suraaj
             </h2>
 
             <div className="grid md:grid-cols-3 gap-8">

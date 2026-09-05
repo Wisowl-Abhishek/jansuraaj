@@ -29,7 +29,7 @@ function AboutUs() {
           <div className="text-center">
             <h1 className="text-4xl font-bold mb-4">About Us</h1>
             <p className=" max-w-3xl mx-auto">
-              WisOwl is your AI-powered career companion — combining smart tech with human insight to reshape how people and companies connect.
+              Jan Suraaj is your AI-powered career companion — combining smart tech with human insight to reshape how people and companies connect.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ function AboutUs() {
                 <h2 className="text-2xl font-thin">What We Do</h2>
               </div>
               <p className="mb-6">
-                WisOwl is an AI-driven job and talent platform. We streamline job discovery and candidate search — reducing friction for both job seekers and recruiters.
+                Jan Suraaj is an AI-driven job and talent platform. We streamline job discovery and candidate search — reducing friction for both job seekers and recruiters.
               </p>
 
               {/* Nested Cards */}
@@ -92,12 +92,12 @@ function AboutUs() {
             </div>
           </div>
 
-          {/* Why WisOwl */}
+          {/* Why Jan Suraaj */}
           <div className="pt-6">
             {/* Section Heading */}
             <div className="flex items-center gap-3 mb-6">
               <BarChart3 className="w-6 h-6" />
-              <h2 className="text-2xl font-thin">Why WisOwl?</h2>
+              <h2 className="text-2xl font-thin">Why Jan Suraaj?</h2>
             </div>
 
             {/* Feature List */}

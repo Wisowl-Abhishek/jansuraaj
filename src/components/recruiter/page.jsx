@@ -157,9 +157,9 @@ const Recruiter = () => {
   ];
 
   const painPoints = [
-    { icon: "⏳", title: "72 Hours to Find a Match", text: "Average time recruiters spend manually screening resumes for a single role. That's 3 days of lost productivity — per job posting.", solution: "WisOwl: AI matches in under 30 seconds" },
-    { icon: "📊", title: "No Visibility on Usage Limits", text: "Hidden caps and surprise overages make budgeting impossible. You hit a wall mid-hiring cycle with no warning.", solution: "WisOwl: Transparent limits + real-time meters" },
-    { icon: "💸", title: "Enterprise Pricing, Freelancer Needs", text: "Bloated platforms charge ₹50K/month for features you'll never use. One-size-fits-all pricing punishes small teams.", solution: "WisOwl: Plans starting at ₹999/month" },
+    { icon: "⏳", title: "72 Hours to Find a Match", text: "Average time recruiters spend manually screening resumes for a single role. That's 3 days of lost productivity — per job posting.", solution: "Jan Suraaj: AI matches in under 30 seconds" },
+    { icon: "📊", title: "No Visibility on Usage Limits", text: "Hidden caps and surprise overages make budgeting impossible. You hit a wall mid-hiring cycle with no warning.", solution: "Jan Suraaj: Transparent limits + real-time meters" },
+    { icon: "💸", title: "Enterprise Pricing, Freelancer Needs", text: "Bloated platforms charge ₹50K/month for features you'll never use. One-size-fits-all pricing punishes small teams.", solution: "Jan Suraaj: Plans starting at ₹999/month" },
   ];
 
   const features = [
@@ -179,7 +179,7 @@ const Recruiter = () => {
 
   const testimonials = [
     { stars: 5, text: "We went from screening 200 resumes manually to getting 10 shortlisted candidates in under a minute. The AI matching is a game-changer for our agency.", name: "Sarah Rajan", role: "Head of Recruitment, Solutions", color: "bg-blue-500", initials: "SR" },
-    { stars: 5, text: "Transparent pricing was the #1 reason I switched. With WisOwl I know exactly what I'm paying for and never worry about hidden caps killing my workflow.", name: "Arun Verma", role: "Freelance IT Recruiter, Bengaluru", color: "bg-violet-500", initials: "AV" },
+    { stars: 5, text: "Transparent pricing was the #1 reason I switched. With Jan Suraaj I know exactly what I'm paying for and never worry about hidden caps killing my workflow.", name: "Arun Verma", role: "Freelance IT Recruiter, Bengaluru", color: "bg-violet-500", initials: "AV" },
     { stars: 5, text: "As an HR manager handling 50+ openings, the AI screening and pipeline CRM give me complete visibility. Onboarding took less than 5 minutes.", name: "Sonu Sharma", role: "HR Manager, ScaleUp Fintech", color: "bg-pink-500", initials: "NK" },
   ];
 
@@ -211,7 +211,7 @@ const Recruiter = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
 
-                <a href={`${appUrl}/recruiter/signup`} className="inline-flex items-center justify-center gap-2 bg-brand-gold text-brand-midnight px-8 py-4 rounded-xl text-base font-bold no-underline transition-all hover:bg-brand-amber hover:-translate-y-0.5" style={{ boxShadow: "0 4px 20px rgba(255,222,89,0.35)" }}>
+                <a href={`${appUrl}/recruiter/signup`} className="inline-flex items-center justify-center gap-2 bg-brand-gold text-brand-midnight px-8 py-4 rounded-xl text-base font-bold no-underline transition-all hover:bg-brand-amber hover:-translate-y-0.5" style={{ boxShadow: "0 4px 20px rgba(253,211,78,0.35)" }}>
                   Post a Job <Arrow />
                 </a>
                 <a href="https://calendar.app.google/kqHPJE7mcKG9PB9g8" target="_blank" className="inline-flex items-center justify-center gap-2 bg-white text-brand-indigo px-8 py-4 rounded-xl text-base font-semibold border-2 border-transparent no-underline transition-all hover:bg-brand-indigo/5 hover:-translate-y-0.5">
@@ -221,7 +221,7 @@ const Recruiter = () => {
               <div className="flex items-center gap-4">
                 <div className="flex">
                   {["bg-brand-indigo", "bg-violet-500", "bg-pink-500", "bg-brand-gold"].map((c, i) => (
-                    <span key={i} className={`w-9 h-9 rounded-full border-2 border-white/30 ${c} flex items-center justify-center text-xs font-bold text-white ${i > 0 ? "-ml-2.5" : ""}`} style={c === "bg-brand-gold" ? { color: "#03051a" } : {}}>
+                    <span key={i} className={`w-9 h-9 rounded-full border-2 border-white/30 ${c} flex items-center justify-center text-xs font-bold text-white ${i > 0 ? "-ml-2.5" : ""}`} style={c === "bg-brand-gold" ? { color: "#0a0a0a" } : {}}>
                       {["AR", "PK", "SM", "VJ"][i]}
                     </span>
                   ))}
@@ -442,7 +442,7 @@ const Recruiter = () => {
               const Icon = plan.icon;
               return (
               <FadeUp key={i} delay={i * 80}>
-                <div className={`bg-white rounded-2xl p-7 relative transition-all hover:shadow-xl hover:-translate-y-1 ${plan.popular ? "border-2 border-brand-indigo md:scale-[1.03] z-10" : "border border-gray-200"}`} style={plan.popular ? { boxShadow: "0 0 0 1px rgba(24,0,173,1), 0 12px 40px rgba(24,0,173,0.12)" } : {}}>
+                <div className={`bg-white rounded-2xl p-7 relative transition-all hover:shadow-xl hover:-translate-y-1 ${plan.popular ? "border-2 border-brand-indigo md:scale-[1.03] z-10" : "border border-gray-200"}`} style={plan.popular ? { boxShadow: "0 0 0 1px rgba(26,26,26,1), 0 12px 40px rgba(26,26,26,0.12)" } : {}}>
                   {plan.popular && (
                     <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-indigo text-white px-4 py-1 rounded-full text-xs font-bold tracking-wide whitespace-nowrap">Most Popular</span>
                   )}
@@ -595,7 +595,7 @@ const Recruiter = () => {
             <p className="text-lg text-gray-500 mb-9 leading-relaxed">Be part of the growing community of recruiters transforming their hiring workflow. <br />Try it free for 14 days — no credit card needed.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-5">
 
-              <a href={`${appUrl}/recruiter/signup`} target="_blank" className="inline-flex items-center justify-center gap-2 bg-brand-gold text-brand-midnight px-8 py-4 rounded-xl text-base font-bold no-underline hover:bg-brand-amber hover:-translate-y-0.5 transition-all" style={{ boxShadow: "0 4px 20px rgba(255,222,89,0.35)" }}>
+              <a href={`${appUrl}/recruiter/signup`} target="_blank" className="inline-flex items-center justify-center gap-2 bg-brand-gold text-brand-midnight px-8 py-4 rounded-xl text-base font-bold no-underline hover:bg-brand-amber hover:-translate-y-0.5 transition-all" style={{ boxShadow: "0 4px 20px rgba(253,211,78,0.35)" }}>
                 Post a Job <Arrow />
               </a>
               <a href="https://calendar.app.google/kqHPJE7mcKG9PB9g8" target="_blank" className="inline-flex items-center justify-center gap-2 bg-white text-brand-indigo px-8 py-4 rounded-xl text-base font-semibold border-2 border-brand-indigo no-underline hover:bg-brand-indigo/5 transition-all">

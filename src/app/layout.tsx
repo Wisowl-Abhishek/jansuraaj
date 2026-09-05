@@ -22,36 +22,36 @@ const poppins = Poppins({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#1800ad",
+  themeColor: "#1a1a1a",
 };
 
 export const metadata: Metadata = {
-  title: "WisOwl - Find Your Dream Job 3x Faster.",
+  title: "Jan Suraaj - Find Your Dream Job 3x Faster.",
   description:
-    "Wisowl uses AI to match candidates with jobs, automate hiring, and deliver smart job alerts. Personal Assistant for job seekers. Powerful for recruiters.",
+    "Jan Suraaj uses AI to match candidates with jobs, automate hiring, and deliver smart job alerts. Personal Assistant for job seekers. Powerful for recruiters.",
   keywords:
     "AI job matching, job recommendation engine, job search automation, smart job alerts, best job portal in india, job portal, find jobs, resume-based job recommendations, personalized job search, AI for recruitment, automated candidate matching, AI hiring tools, smart recruitment software, job portal for recruiters, hire faster with AI, AI shortlisting platform, AI job portal India, AI-based job platform, job application tracking, machine learning jobs platform, AI-driven hiring solution, one-stop job portal, all-in-one recruitment system",
-  authors: [{ name: "Wisowl Team" }],
+  authors: [{ name: "Jan Suraaj Team" }],
   robots: "index, follow",
   alternates: {
     canonical: "https://wisowl.com",
   },
   openGraph: {
-    title: "WisOwl - Find Your Dream Job 3x Faster.",
+    title: "Jan Suraaj - Find Your Dream Job 3x Faster.",
     description:
-      "AI job matching and personalized recommendations for candidates. Smart hiring tools and automated shortlisting for recruiters. WisOwl is your all-in-one recruitment system.",
+      "AI job matching and personalized recommendations for candidates. Smart hiring tools and automated shortlisting for recruiters. Jan Suraaj is your all-in-one recruitment system.",
     url: "https://wisowl.com",
     type: "website",
     images: [
       "https://service.wisowl.com/storage/v1/object/public/assets//OG.png",
     ],
-    siteName: "WisOwl",
+    siteName: "Jan Suraaj",
   },
   twitter: {
     card: "summary_large_image",
-    title: "WisOwl - Find Your Dream Job 3x Faster.",
+    title: "Jan Suraaj - Find Your Dream Job 3x Faster.",
     description:
-      "Get hired faster with AI-powered job matching. Recruit smarter with automated candidate shortlisting. Discover WisOwl - the future of recruitment in India.",
+      "Get hired faster with AI-powered job matching. Recruit smarter with automated candidate shortlisting. Discover Jan Suraaj - the future of recruitment in India.",
     images: [
       "https://service.wisowl.com/storage/v1/object/public/assets//OG.png",
     ],
@@ -61,7 +61,6 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
       { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
       { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
     ],
@@ -94,7 +93,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "Wisowl",
+              name: "Jan Suraaj",
               url: "https://wisowl.com",
               potentialAction: {
                 "@type": "SearchAction",

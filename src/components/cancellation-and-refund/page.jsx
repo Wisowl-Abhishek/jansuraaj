@@ -52,17 +52,17 @@ useEffect(() => {
         <main className="p-8 space-y-8 text-gray-800 leading-relaxed">
           <section>
             <p>
-              At <span className="font-semibold">WisOwl</span>, we are committed to delivering high-quality, AI-powered learning and professional growth services through our credit-based platform. This document outlines our official policy regarding cancellations and refunds.
+              At <span className="font-semibold">Jan Suraaj</span>, we are committed to delivering high-quality, AI-powered learning and professional growth services through our credit-based platform. This document outlines our official policy regarding cancellations and refunds.
             </p>
             <p className="mt-4">
-              By purchasing, accessing, or using WisOwl credits or services, you acknowledge and agree to the terms stated below.
+              By purchasing, accessing, or using Jan Suraaj credits or services, you acknowledge and agree to the terms stated below.
             </p>
           </section>
 
           <section>
             <h2 className="text-lg font-semibold flex items-center gap-2"><Info className="h-5 w-5 text-indigo-600" />1. Understanding Our Credit System</h2>
             <ul className="list-disc ml-6 mt-2 space-y-1">
-              <li>WisOwl operates on a <span className="font-semibold">credit-based model</span>. Users purchase credits that can be redeemed for specific services, tools, and features available on the platform.</li>
+              <li>Jan Suraaj operates on a <span className="font-semibold">credit-based model</span>. Users purchase credits that can be redeemed for specific services, tools, and features available on the platform.</li>
               <li>Credits are <span className="font-semibold">instantly available</span> upon successful payment.</li>
               <li>Credits represent <span className="font-semibold">digital access rights</span> and are not physical goods.</li>
               <li>Once credits are applied to your account, the services are considered <span className="font-semibold">delivered and fulfilled.</span></li>
@@ -73,9 +73,9 @@ useEffect(() => {
             <h2 className="text-lg font-semibold flex items-center gap-2"><RefreshCw className="h-5 w-5 text-indigo-600" />2. Cancellation Policy</h2>
             <h3 className="font-semibold mt-3">2.1 No Cancellations</h3>
             <p>
-              All credit purchases made through WisOwl are final and non-cancellable. Once a transaction is processed and credits are credited to your account, it <span className="font-semibold">cannot be canceled, modified, or reversed.</span>
+              All credit purchases made through Jan Suraaj are final and non-cancellable. Once a transaction is processed and credits are credited to your account, it <span className="font-semibold">cannot be canceled, modified, or reversed.</span>
             </p>
-            <p className="mt-2">WisOwl <span className="font-semibold">does not entertain cancellation requests</span> for the following reasons:</p>
+            <p className="mt-2">Jan Suraaj <span className="font-semibold">does not entertain cancellation requests</span> for the following reasons:</p>
             <ul className="list-disc ml-6 mt-1 space-y-1">
               <li>Change of mind</li>
               <li>Unused or partially used credits</li>
@@ -85,7 +85,7 @@ useEffect(() => {
             </ul>
             <h3 className="font-semibold mt-3">2.2 Instant Service Fulfilment</h3>
             <p>
-              Because WisOwl’s credits are delivered instantly and enable immediate access to digital services, the purchase is classified as a <span className="font-semibold">completed service transaction</span>. Therefore, <span className="font-semibold">no cancellation requests</span> will be accepted after payment confirmation.
+              Because Jan Suraaj’s credits are delivered instantly and enable immediate access to digital services, the purchase is classified as a <span className="font-semibold">completed service transaction</span>. Therefore, <span className="font-semibold">no cancellation requests</span> will be accepted after payment confirmation.
             </p>
           </section>
 
@@ -93,7 +93,7 @@ useEffect(() => {
             <h2 className="text-lg font-semibold flex items-center gap-2"><AlertTriangle className="h-5 w-5 text-indigo-600" />3. Refund Policy</h2>
             <h3 className="font-semibold mt-3">3.1 No Refunds</h3>
             <p>
-              All payments and credit purchases on WisOwl are <span className="font-semibold">non-refundable</span>, regardless of circumstances. This includes, but is not limited to:
+              All payments and credit purchases on Jan Suraaj are <span className="font-semibold">non-refundable</span>, regardless of circumstances. This includes, but is not limited to:
             </p>
             <ul className="list-disc ml-6 mt-1 space-y-1">
               <li>Unused, partially used, or expired credits</li>
@@ -108,11 +108,11 @@ useEffect(() => {
             </p>
             <h3 className="font-semibold mt-3">3.2 Duplicate Transactions</h3>
             <p>
-              In rare cases of a <span className="font-semibold">proven duplicate charge</span> caused by a system error on WisOwl's side:
+              In rare cases of a <span className="font-semibold">proven duplicate charge</span> caused by a system error on Jan Suraaj's side:
             </p>
             <ul className="list-disc ml-6 mt-1 space-y-1">
               <li>Users must notify <b>support@wisowl.com</b> within <span className="font-semibold">7 days</span> of the transaction.</li>
-              <li>Upon verification, WisOwl may, <span className="font-semibold">at its sole discretion</span>, issue a <span className="font-semibold">service credit adjustment</span> or reverse the duplicate charge.</li>
+              <li>Upon verification, Jan Suraaj may, <span className="font-semibold">at its sole discretion</span>, issue a <span className="font-semibold">service credit adjustment</span> or reverse the duplicate charge.</li>
               <li>No other forms of compensation will be provided.</li>
             </ul>
           </section>
@@ -120,10 +120,10 @@ useEffect(() => {
           <section>
             <h2 className="text-lg font-semibold flex items-center gap-2"><Clock className="h-5 w-5 text-indigo-600" />4. Technical Issues and Resolutions</h2>
             <p>
-              WisOwl strives to ensure consistent uptime and service reliability. In the unlikely event of a <span className="font-semibold">verified platform-wide technical disruption</span> directly caused by WisOwl that prevents service access for more than 48 consecutive hours:
+              Jan Suraaj strives to ensure consistent uptime and service reliability. In the unlikely event of a <span className="font-semibold">verified platform-wide technical disruption</span> directly caused by Jan Suraaj that prevents service access for more than 48 consecutive hours:
             </p>
             <ul className="list-disc ml-6 mt-1 space-y-1">
-              <li>WisOwl may, at its discretion, provide <span className="font-semibold">service credits or access extensions</span>.</li>
+              <li>Jan Suraaj may, at its discretion, provide <span className="font-semibold">service credits or access extensions</span>.</li>
               <li><span className="font-semibold">Cash or monetary refunds will not be provided under any circumstances.</span></li>
               
             </ul>
@@ -152,20 +152,20 @@ useEffect(() => {
               <li>Detailed description of the issue</li>
               <li>Supporting documentation, if any</li>
             </ul>
-            <p className="mt-2">WisOwl will investigate the matter and respond within <span className="font-semibold">5-7 business days.</span></p>
+            <p className="mt-2">Jan Suraaj will investigate the matter and respond within <span className="font-semibold">5-7 business days.</span></p>
             <h3 className="font-semibold mt-3">6.2 Final Decision</h3>
             <p>
-              Following the review process, all decisions made by WisOwl shall be <span className="font-semibold">final and binding</span>. WisOwl reserves the right to reject refund or reversal requests that do not comply with this policy.
+              Following the review process, all decisions made by Jan Suraaj shall be <span className="font-semibold">final and binding</span>. Jan Suraaj reserves the right to reject refund or reversal requests that do not comply with this policy.
             </p>
           </section>
 
           <section>
             <h2 className="text-lg font-semibold flex items-center gap-2"><Info className="h-5 w-5 text-indigo-600" />7. Policy Updates</h2>
             <p>
-              WisOwl reserves the right to <span className="font-semibold">update or amend this policy</span> at any time without prior notice. Updated versions will be published on our website with a revised “Last Updated” date.
+              Jan Suraaj reserves the right to <span className="font-semibold">update or amend this policy</span> at any time without prior notice. Updated versions will be published on our website with a revised “Last Updated” date.
             </p>
             <p>
-              Continued use of WisOwl services after such updates signifies your <span className="font-semibold">acceptance of the modified policy.</span>
+              Continued use of Jan Suraaj services after such updates signifies your <span className="font-semibold">acceptance of the modified policy.</span>
             </p>
           </section>
 
@@ -193,11 +193,11 @@ useEffect(() => {
           <section className="bg-slate-50 rounded-lg p-5">
             <h2 className="text-lg font-semibold text-gray-900">Disclaimer</h2>
             <p className="mt-2 text-gray-700">
-              By purchasing credits or using WisOwl’s services, you acknowledge and agree that:
+              By purchasing credits or using Jan Suraaj’s services, you acknowledge and agree that:
               <ul className="list-disc ml-6 mt-1 space-y-1">
                <li>all purchases are <span className="font-semibold">final, non-cancellable, and non-refundable.</span></li> 
                <li>Credits constitute <span className="font-semibold">instant access to digital services</span> and are considered <span className="font-semibold">delivered upon purchase</span>.</li>
-               <li>This policy ensures fairness, transparency, and operational consistency for all WisOwl users.</li>
+               <li>This policy ensures fairness, transparency, and operational consistency for all Jan Suraaj users.</li>
               </ul>
             </p>
           </section>

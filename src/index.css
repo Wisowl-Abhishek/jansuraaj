@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /*
- * WisOwl Brand Theme
+ * Jan Suraaj Brand Theme
  * ─────────────────────────────────────────────────────────────────
  * All brand color tokens live here. To retheme the app, update the
  * values in this @theme block — every Tailwind utility that
@@ -12,25 +12,26 @@
  * ─────────────────────────────────────────────────────────────────
  */
 @theme {
-  --color-brand-indigo:   #1800ad; /* Primary — backgrounds, bars, panels  */
-  --color-brand-violet:   #2a10c7; /* Hover states, gradient endpoints       */
-  --color-brand-slate:    #1400a0; /* Muted — pattern overlays, grid lines   */
-  --color-brand-navy:     #0d1136; /* Dark bg — cinematic backgrounds        */
-  --color-brand-midnight: #03051a; /* Ultra-dark — with vignette             */
-  --color-brand-gold:     #ffde59; /* Accent 1 — CTA highlights, arrows      */
-  --color-brand-amber:    #febd59; /* Accent 2 — badges, starburst, stars    */
+  --color-brand-indigo:   #1a1a1a; /* Primary — backgrounds, bars, panels  */
+  --color-brand-violet:   #2b2b2b; /* Hover states, gradient endpoints       */
+  --color-brand-slate:    #242424; /* Muted — pattern overlays, grid lines   */
+  --color-brand-navy:     #171717; /* Dark bg — cinematic backgrounds        */
+  --color-brand-midnight: #0a0a0a; /* Ultra-dark — with vignette             */
+  --color-brand-gold:     #fdd34e; /* Accent 1 — CTA highlights, arrows      */
+  --color-brand-amber:    #e8bd42; /* Accent 2 — hover states, badges, stars */
+  --color-brand-cream:    #fdf2d3; /* Accent 3 — light surfaces, sections    */
 }
 
 :root {
   /* CSS custom properties for use in SCSS, inline styles, non-Tailwind CSS */
-  /* --brand-indigo:   #342d74; */
-  --brand-indigo:   #0d1136;
-  --brand-violet:   #2a10c7;
-  --brand-slate:    #1400a0;
-  --brand-navy:     #0d1136;
-  --brand-midnight: #03051a;
-  --brand-gold:     #ffde59;
-  --brand-amber:    #febd59;
+  --brand-indigo:   #1a1a1a;
+  --brand-violet:   #2b2b2b;
+  --brand-slate:    #242424;
+  --brand-navy:     #171717;
+  --brand-midnight: #0a0a0a;
+  --brand-gold:     #fdd34e;
+  --brand-amber:    #e8bd42;
+  --brand-cream:    #fdf2d3;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

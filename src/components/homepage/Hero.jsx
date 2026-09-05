@@ -8,25 +8,27 @@ const Hero = ({ setShowSignin }) => {
 
     return (
         <section className="hero relative">
-            <div
+            {/* <div
                 className="pointer-events-none absolute -top-32 -right-2 h-[1000px] w-[1000px] rounded-full opacity-30 z-10"
                 style={{
                 background:
-                    "radial-gradient(circle, #ffde59 0%, transparent 70%)",
+                    "radial-gradient(circle, #fdd34e 0%, transparent 70%)",
                 }}
-            />
+            /> */}
 
             <div
                 className="pointer-events-none absolute bottom-0 -left-34 h-[1000px] w-[1000px] rounded-full opacity-20 z-10"
                 style={{
                 background:
-                    "radial-gradient(circle, #ffde59 0%, transparent 70%)",
+                    "radial-gradient(circle, #fdd34e 0%, transparent 70%)",
                 }}
             />
+            
             <div className="container text-center text-white relative z-20">
 
                 <div className="hero__logo">
-                        <EyeFollowOwl />
+                        {/* <EyeFollowOwl /> */}
+                        <img src="/jansuraajlogo.png" alt="logo" className="mx-auto" />
                 </div>
 
                 <div className="hero__trusted-line text-brand-gold font-normal mb-3 text-sm sm:text-lg">
@@ -50,7 +52,7 @@ const Hero = ({ setShowSignin }) => {
                     <ul>
                         <li className=' text-md sm:text-lg'>All Jobs at One Place</li>
                         <li className=' text-md sm:text-lg'>Personalised Jobs</li>
-                        <li className=' text-md sm:text-lg'>AI Resume Builder</li>
+                        {/* <li className=' text-md sm:text-lg'>AI Resume Builder</li> */}
                         {/* <li>Auto Apply*</li> */}
                     </ul>
                 </div>

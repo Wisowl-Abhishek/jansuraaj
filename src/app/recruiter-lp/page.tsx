@@ -153,7 +153,7 @@ const Recruiter = () => {
       num: "1",
       tag: "You", tagColor: "bg-red-100 text-red-700",
       title: "Tell us what you need",
-      desc: "Post a role or drop in a brief. That's your entire job at this stage. WisOwl takes it from here.",
+      desc: "Post a role or drop in a brief. That's your entire job at this stage. Jan Suraaj takes it from here.",
       mini: null,
     },
     {
@@ -211,19 +211,19 @@ const Recruiter = () => {
 
   const bentoCards = [
     { icon: "🎯", title: "AI-powered sourcing, done for you",             desc: "No Boolean searches. No portal hunting. Tell us the role — our AI searches 100M+ profiles and bring you the people worth talking to.",                                                                     span: "md:col-span-4", bigNum: null },
-    { icon: "⚡", title: "Shortlists in hours, not weeks",                 desc: "What takes a recruiter days of manual work, WisOwl delivers the same morning. Pre-matched, pre-warmed, ready to meet.",                                                                                     span: "md:col-span-4", bigNum: null },
+    { icon: "⚡", title: "Shortlists in hours, not weeks",                 desc: "What takes a recruiter days of manual work, Jan Suraaj delivers the same morning. Pre-matched, pre-warmed, ready to meet.",                                                                                     span: "md:col-span-4", bigNum: null },
     { icon: "🔄", title: "AI that gets smarter with every placement",      desc: "Every hire you make teaches our AI more about what good looks like for your roles. The service improves the more you use it.",                                                                               span: "md:col-span-4", bigNum: null },
-    { icon: null, title: "Faster placements, consistently",                 desc: "Teams running WisOwl fill roles three times faster — because they spend their time on conversations that matter, not work that should've been automated.",                                                   span: "md:col-span-6", bigNum: "3×"  },
+    { icon: null, title: "Faster placements, consistently",                 desc: "Teams running Jan Suraaj fill roles three times faster — because they spend their time on conversations that matter, not work that should've been automated.",                                                   span: "md:col-span-6", bigNum: "3×"  },
     { icon: "🌍", title: "AI outreach across every market you serve",       desc: "Multi-language, timezone-aware — our AI engages candidates across every region — without you managing a thing.",                                                                                             span: "md:col-span-6", bigNum: null },
   ];
 
   const testimonials = [
     {
-      quote: '"I briefed WisOwl on a difficult niche role Monday morning. By Tuesday afternoon I had a shortlist of six warm candidates, two of whom we placed. That used to take us three weeks."',
+      quote: '"I briefed Jan Suraaj on a difficult niche role Monday morning. By Tuesday afternoon I had a shortlist of six warm candidates, two of whom we placed. That used to take us three weeks."',
       initials: "SC", name: "Sophie C.", role: "Head of Talent Acquisition · Berlin, Germany",
     },
     {
-      quote: '"We stopped doing outreach manually entirely. WisOwl handles the full conversation — sourcing, messaging, follow-ups — and our team steps in only when a candidate is warm and ready."',
+      quote: '"We stopped doing outreach manually entirely. Jan Suraaj handles the full conversation — sourcing, messaging, follow-ups — and our team steps in only when a candidate is warm and ready."',
       initials: "JB", name: "James B.", role: "Founder, Executive Search Firm · New York, USA",
     },
     {
@@ -240,12 +240,12 @@ const Recruiter = () => {
             HERO — home-gradient
         ══════════════════════════════ */}
         <section
-          className="relative pt-25 sm:pt-32 pb-24 overflow-hidden home-gradient">
+          className="relative pt-15 sm:pt-12 pb-24 overflow-hidden home-gradient">
             <div
                 className="pointer-events-none absolute -top-32 -right-2 h-[1000px] w-[1000px] rounded-full opacity-30 z-10"
                 style={{
                 background:
-                    "radial-gradient(circle, #ffde59 0%, transparent 70%)",
+                    "radial-gradient(circle, #fdd34e 0%, transparent 70%)",
                 }}
             />
 
@@ -253,7 +253,7 @@ const Recruiter = () => {
                 className="pointer-events-none absolute bottom-0 -left-24 h-[1000px] w-[1000px] rounded-full opacity-20 z-10"
                 style={{
                 background:
-                    "radial-gradient(circle, #ffde59 0%, transparent 70%)",
+                    "radial-gradient(circle, #fdd34e 0%, transparent 70%)",
                 }}
             />
           <div className="absolute right-0 bottom-0 hidden lg:flex">
@@ -265,6 +265,13 @@ const Recruiter = () => {
             />
           </div>
           <div className="relative max-w-7xl mx-auto px-6 z-10 pt-2 md:pt-10">
+            {/* logo */}
+            <img
+              src="/jansuraajlogo.png"
+              alt="Jan Suraaj Logo"
+              className="h-30 rounded-full mb-6"
+            />
+
             {/* tag */}
             <div className="inline-flex items-center gap-2 border border-white/25 text-white/90 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-8"
               style={{ background: "rgba(255,255,255,.1)", backdropFilter: "blur(8px)" }}>
@@ -286,8 +293,8 @@ const Recruiter = () => {
             {/* agent pills */}
             <div className="flex flex-wrap items-center gap-3 mb-9">
               {[
-                { label: "AI Sources",  dot: "#ffde59", border: "rgba(255,222,89,.35)",  bg: "rgba(255,222,89,.12)",  text: "#fff4b3" },
-                { label: "AI Matches",  dot: "#ffde59", border: "rgba(255,222,89,.35)",  bg: "rgba(255,222,89,.12)",  text: "#fff4b3" },
+                { label: "AI Sources",  dot: "#fdd34e", border: "rgba(253,211,78,.35)",  bg: "rgba(253,211,78,.12)",  text: "#fdf2d3" },
+                { label: "AI Matches",  dot: "#fdd34e", border: "rgba(253,211,78,.35)",  bg: "rgba(253,211,78,.12)",  text: "#fdf2d3" },
                 { label: "AI Engages",  dot: "#7eb8ff", border: "rgba(126,184,255,.35)", bg: "rgba(126,184,255,.12)", text: "#c5deff" },
                 { label: "AI Screens",  dot: "#c4b5fd", border: "rgba(196,181,253,.3)",  bg: "rgba(196,181,253,.10)", text: "#ddd6fe", soon: true },
               ].map((p, i) => (
@@ -313,7 +320,7 @@ const Recruiter = () => {
               <button
                 onClick={openDemo}
                 className="inline-flex items-center gap-2 bg-brand-gold text-brand-midnight px-8 py-3.5 rounded-xl font-bold text-sm transition-all hover:bg-brand-amber hover:-translate-y-0.5"
-                style={{ boxShadow: "0 8px 32px rgba(255,222,89,.40)" }}
+                style={{ boxShadow: "0 8px 32px rgba(253,211,78,.40)" }}
               >
                 Book a Demo <ArrowRight size={15} />
               </button>
@@ -329,8 +336,9 @@ const Recruiter = () => {
         </section>
 
         {/* ══════════════════════════════
-            STATS BAR
+            STATS BAR — commented out
         ══════════════════════════════ */}
+        {false && (
         <section className="bg-gray-900 border-b border-gray-800">
           <div className="max-w-5xl mx-auto px-6 py-10">
             <p className="text-center text-xs font-bold text-gray-500 uppercase tracking-widest mb-8">
@@ -340,7 +348,7 @@ const Recruiter = () => {
               {stats.map((s, i) => (
                 <FadeUp key={i} delay={i * 70} className="flex-1 min-w-[100px] text-center">
                   <div className="text-3xl font-extrabold mb-1"
-                    style={{ background: "linear-gradient(135deg, #ffffff, #ffde59)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
+                    style={{ background: "linear-gradient(135deg, #ffffff, #fdd34e)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
                     {s.val}
                   </div>
                   <div className="text-xs text-gray-100 uppercase tracking-wider font-medium">{s.label}</div>
@@ -349,6 +357,7 @@ const Recruiter = () => {
             </div>
           </div>
         </section>
+        )}
 
         {/* ══════════════════════════════
             SOURCING SECTION
@@ -366,7 +375,7 @@ const Recruiter = () => {
                   <span className="text-brand-indigo">your team would never reach.</span>
                 </h2>
                 <p className="text-sm text-gray-500 leading-relaxed mb-6">
-                  Most recruiters spend 60% of their time just looking. We eliminate that entirely. WisOwl's AI searches across 100M+ verified global profiles on your behalf — passive talent, hard-to-reach specialists, and candidates already being chased by your competition.
+                  Most recruiters spend 60% of their time just looking. We eliminate that entirely. Jan Suraaj's AI searches across 100M+ verified global profiles on your behalf — passive talent, hard-to-reach specialists, and candidates already being chased by your competition.
                 </p>
                 <ul className="space-y-3 mb-8">
                   {sourceBullets.map((b, i) => (
@@ -415,8 +424,8 @@ const Recruiter = () => {
                     <div className="w-12 h-12 rounded-full bg-brand-indigo flex items-center justify-center shadow-lg shadow-brand-indigo/25">
                       <svg width="22" height="22" viewBox="0 0 36 36" fill="none">
                         <circle cx="18" cy="18" r="14" stroke="rgba(255,255,255,.5)" strokeWidth="1.5" />
-                        <path d="M6 18 Q18 6 30 18 Q18 30 6 18Z" stroke="rgba(255,222,89,.8)" strokeWidth="1.2" fill="none" />
-                        <circle cx="18" cy="18" r="3" fill="rgba(255,222,89,.9)" />
+                        <path d="M6 18 Q18 6 30 18 Q18 30 6 18Z" stroke="rgba(253,211,78,.8)" strokeWidth="1.2" fill="none" />
+                        <circle cx="18" cy="18" r="3" fill="rgba(253,211,78,.9)" />
                       </svg>
                     </div>
                   </div>
@@ -527,7 +536,7 @@ const Recruiter = () => {
                       {/* circle */}
                       <div
                         className="flex-shrink-0 w-10 h-10 rounded-full text-white font-extrabold text-sm flex items-center justify-center shadow-lg z-10 relative"
-                        style={{ background: "linear-gradient(135deg, #03051a, #1800ad)", boxShadow: "0 4px 16px rgba(24,0,173,.35)" }}
+                        style={{ background: "linear-gradient(135deg, #0a0a0a, #1a1a1a)", boxShadow: "0 4px 16px rgba(26,26,26,.35)" }}
                       >
                         {step.num}
                       </div>
@@ -620,13 +629,13 @@ const Recruiter = () => {
         <div className="h-px bg-gray-100" />
 
         {/* ══════════════════════════════
-            WHY WISOWL — BENTO
+            WHY JAN SURAAJ — BENTO
         ══════════════════════════════ */}
         <section className="py-24 bg-gray-50">
           <div className="max-w-6xl mx-auto px-6">
             <FadeUp>
               <div className="text-center mb-12">
-                <SecLabel center>The WisOwl Difference</SecLabel>
+                <SecLabel center>The Jan Suraaj Difference</SecLabel>
                 <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900">
                   You focus on closing.{" "}
                   <span className="text-brand-indigo">We handle everything before that.</span>
@@ -641,7 +650,7 @@ const Recruiter = () => {
                     {card.bigNum ? (
                       <div
                         className="text-5xl font-extrabold mb-3 leading-none"
-                        style={{ background: "linear-gradient(135deg, #1800ad, #ffde59)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}
+                        style={{ background: "linear-gradient(135deg, #1a1a1a, #fdd34e)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}
                       >
                         {card.bigNum}
                       </div>
@@ -657,11 +666,13 @@ const Recruiter = () => {
           </div>
         </section>
 
+        {/* ══════════════════════════════
+            TESTIMONIALS — commented out
+        ══════════════════════════════ */}
+        {false && (
+        <>
         <div className="h-px bg-gray-100" />
 
-        {/* ══════════════════════════════
-            TESTIMONIALS
-        ══════════════════════════════ */}
         <section className="py-24 bg-white">
           <div className="max-w-6xl mx-auto px-6">
             <FadeUp>
@@ -688,7 +699,7 @@ const Recruiter = () => {
                     <div className="flex items-center gap-3 pt-4 border-t border-gray-200">
                       <div
                         className="w-10 h-10 rounded-full flex items-center justify-center text-white text-xs font-extrabold flex-shrink-0"
-                        style={{ background: "linear-gradient(135deg, #03051a, #1800ad)" }}
+                        style={{ background: "linear-gradient(135deg, #0a0a0a, #1a1a1a)" }}
                       >
                         {t.initials}
                       </div>
@@ -705,6 +716,8 @@ const Recruiter = () => {
         </section>
 
         <div className="h-px bg-gray-100" />
+        </>
+        )}
 
         {/* ══════════════════════════════
             FINAL CTA
@@ -718,7 +731,7 @@ const Recruiter = () => {
                 className="pointer-events-none absolute bottom-0 -left-24 h-[1000px] w-[1000px] rounded-full opacity-20 z-10"
                 style={{
                 background:
-                    "radial-gradient(circle, #ffde59 0%, transparent 70%)",
+                    "radial-gradient(circle, #fdd34e 0%, transparent 70%)",
                 }}
             />
           <div className="absolute inset-0 pointer-events-none flex items-center justify-center">

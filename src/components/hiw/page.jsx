@@ -31,7 +31,7 @@ const { appUrl } = UserAuth();
           <h1 className="text-4xl font-bold text-center mb-2">How It Works</h1>
           <p className="text-xl text-center mb-6">Smarter. Simpler. Faster.</p>
           <p className=" mb-12 text-center max-w-2xl mx-auto">
-            WisOwl uses the power of AI to connect the right candidates with the right jobs —
+            Jan Suraaj uses the power of AI to connect the right candidates with the right jobs —
             without the noise, guesswork, or endless scrolling.
           </p>
 
@@ -54,7 +54,7 @@ const { appUrl } = UserAuth();
                   [<UserPlus className="w-5 h-5" />, "Create Your Profile: Sign up and complete your profile. Upload your resume or build one from scratch."],
                   [<Sparkles className="w-5 h-5" />, "Get AI-Powered Matches: Get role suggestions based on your skills, experience, and goals."],
                   [<FileText className="w-5 h-5" />, "Enhance Your Resume: Receive personalized suggestions to improve your CV with our Resume Enhancer."],
-                  [<Send className="w-5 h-5" />, "Apply in One Click: Easily apply and track applications directly on WisOwl."],
+                  [<Send className="w-5 h-5" />, "Apply in One Click: Easily apply and track applications directly on Jan Suraaj."],
                   [<Search className="w-5 h-5" />, "Get Discovered by Recruiters: Make your profile public to be contacted by top recruiters."],
                 ].map(([Icon, text], i) => (
                   <div key={i} className="flex items-start gap-3">
@@ -113,7 +113,7 @@ const { appUrl } = UserAuth();
 
           {/* CTA */}
           <div className="text-center mt-10 border-t border-dashed border-blue-500/20 pt-10">
-            <h3 className="text-3xl mb-4 font-thin pb-2">Start Your WisOwl Journey Today</h3>
+            <h3 className="text-3xl mb-4 font-thin pb-2">Start Your Jan Suraaj Journey Today</h3>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-6">
               <a
                 href={`${appUrl}/signup`}

@@ -8,14 +8,15 @@ export default {
         poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        /* WisOwl brand palette — mirrors @theme block in src/index.css */
-        "brand-indigo":   "#1800ad", /* Primary — backgrounds, bars, panels  */
-        "brand-violet":   "#2a10c7", /* Hover states, gradient endpoints       */
-        "brand-slate":    "#1400a0", /* Muted — pattern overlays, grid lines   */
-        "brand-navy":     "#0d1136", /* Dark bg — cinematic backgrounds        */
-        "brand-midnight": "#03051a", /* Ultra-dark — with vignette             */
-        "brand-gold":     "#ffde59", /* Accent 1 — CTA highlights, arrows      */
-        "brand-amber":    "#febd59", /* Accent 2 — badges, starburst, stars    */
+        /* Jan Suraaj brand palette — mirrors @theme block in src/index.css */
+        "brand-indigo":   "#1a1a1a", /* Primary — backgrounds, bars, panels  */
+        "brand-violet":   "#2b2b2b", /* Hover states, gradient endpoints       */
+        "brand-slate":    "#242424", /* Muted — pattern overlays, grid lines   */
+        "brand-navy":     "#171717", /* Dark bg — cinematic backgrounds        */
+        "brand-midnight": "#0a0a0a", /* Ultra-dark — with vignette             */
+        "brand-gold":     "#fdd34e", /* Accent 1 — CTA highlights, arrows      */
+        "brand-amber":    "#e8bd42", /* Accent 2 — hover states, badges, stars */
+        "brand-cream":    "#fdf2d3", /* Accent 3 — light surfaces, sections    */
       },
       keyframes: {
         'bounce-interval': {

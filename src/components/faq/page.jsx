@@ -27,7 +27,7 @@ useEffect(() => {
             Frequently Asked Questions (FAQs)
           </h1>
           <p className="text-center  text-lg mb-12">
-            Everything you need to know about using WisOwl
+            Everything you need to know about using Jan Suraaj
           </p>
 
           {/* For Job Seekers */}
@@ -37,16 +37,16 @@ useEffect(() => {
             </h2>
             <ul className="space-y-6">
               {[
-                ["What is WisOwl?", "WisOwl is an AI-powered job search platform that matches you with jobs that suit your skills and preferences — without the endless scrolling."],
-                ["How is WisOwl different from other job portals?", "WisOwl uses AI to personalize job recommendations, enhance your resume, connect you with recruiters, and offer valuable feedback."],
-                ["Is WisOwl free for job seekers?", "Yes, it’s 100% free to search and apply for jobs, and use our AI tools."],
+                ["What is Jan Suraaj?", "Jan Suraaj is an AI-powered job search platform that matches you with jobs that suit your skills and preferences — without the endless scrolling."],
+                ["How is Jan Suraaj different from other job portals?", "Jan Suraaj uses AI to personalize job recommendations, enhance your resume, connect you with recruiters, and offer valuable feedback."],
+                ["Is Jan Suraaj free for job seekers?", "Yes, it’s 100% free to search and apply for jobs, and use our AI tools."],
                 ["How does the AI match me with jobs?", "By analyzing your resume, experience, goals, and skills to recommend the most relevant roles."],
-                ["Can WisOwl help improve my resume?", "Yes! The Resume Enhancer tool gives real-time AI suggestions to improve your CV."],
+                ["Can Jan Suraaj help improve my resume?", "Yes! The Resume Enhancer tool gives real-time AI suggestions to improve your CV."],
                 ["Do I need to upload a resume?", "Uploading a resume is recommended but you can also manually build your profile."],
                 ["Will recruiters see my profile?", "Yes, if your profile is completed and set to 'visible'."],
                 ["How do I apply to jobs?", "Click 'Apply Now' on a listing. Our tracker keeps you updated on progress."],
                 ["Is my personal data safe?", "Yes. We follow strict security protocols and never share your data without consent."],
-                ["Is WisOwl available on mobile?", "Yes, on mobile browsers. A mobile app is coming soon!"],
+                ["Is Jan Suraaj available on mobile?", "Yes, on mobile browsers. A mobile app is coming soon!"],
                 ["How do I reset my password?", "Use the 'Forgot Password' link on the login page."],
                 ["How do I report a bug?", "Report it on our Contact Us page or email support@wisowl.com."],
                 ["How do I delete my account?", "Request account deletion by emailing support@wisowl.com or using the Contact page."],
@@ -66,14 +66,14 @@ useEffect(() => {
             </h2>
             <ul className="space-y-6">
               {[
-                ["Why should I hire through WisOwl?", "You get AI-powered candidate shortlisting, active verified talent, and faster hiring decisions."],
+                ["Why should I hire through Jan Suraaj?", "You get AI-powered candidate shortlisting, active verified talent, and faster hiring decisions."],
                 ["How do I post a job?", "Sign up as a Recruiter, complete your profile, and use our quick job posting tool or sync your career page."],
                 ["Is there a cost to post jobs?", "Basic job posts are free. Premium features include highlighted listings and AI tools."],
-                ["What kind of candidates are on WisOwl?", "From fresh graduates to experienced professionals across multiple domains."],
-                ["Can WisOwl screen candidates for me?", "Yes, our AI ranks candidates based on fit and behavior patterns."],
+                ["What kind of candidates are on Jan Suraaj?", "From fresh graduates to experienced professionals across multiple domains."],
+                ["Can Jan Suraaj screen candidates for me?", "Yes, our AI ranks candidates based on fit and behavior patterns."],
                 ["How do I contact a candidate?", "Use our secure messaging system or request callbacks directly via the dashboard."],
                 ["How can I track performance of job posts?", "Your dashboard shows views, applications, and AI match scores."],
-                ["Is WisOwl available on mobile?", "Yes, and our dedicated app is coming soon."],
+                ["Is Jan Suraaj available on mobile?", "Yes, and our dedicated app is coming soon."],
                 ["How do I reset my password?", "Click 'Forgot Password' on the login screen."],
                 ["How do I report a bug?", "Use our Contact page or email support@wisowl.com."],
                 ["How do I delete my account?", "Contact us via email or the Contact page to delete your account."],

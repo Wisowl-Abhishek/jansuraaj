@@ -38,7 +38,7 @@ function TermsOfService() {
             {/* Welcome */}
             <div>
               <p>
-                Welcome to <strong>WisOwl</strong>. By accessing or using our
+                Welcome to <strong>Jan Suraaj</strong>. By accessing or using our
                 website (<a
                   href="https://www.wisowl.com"
                   className="hover:underline"
@@ -52,7 +52,7 @@ function TermsOfService() {
               </p>
               <p className="mt-3">
                 These Terms constitute a legally binding agreement between{" "}
-                <strong>WisOwl Technologies Pvt. Ltd.</strong> ("WisOwl", "we",
+                <strong>Jan Suraaj Technologies Pvt. Ltd.</strong> ("Jan Suraaj", "we",
                 "our", "us") and you ("you", "user", "job seeker", or
                 "recruiter").
               </p>
@@ -64,7 +64,7 @@ function TermsOfService() {
                 <User className="w-5 h-5" /> 1. Eligibility
               </h2>
               <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li>You must be at least 16 years old to use WisOwl.</li>
+                <li>You must be at least 16 years old to use Jan Suraaj.</li>
                 <li>
                   You are legally eligible to enter into this agreement.
                 </li>
@@ -98,7 +98,7 @@ function TermsOfService() {
                 </li>
               </ul>
               <p className="mt-2">
-                WisOwl reserves the right to suspend or delete accounts found to
+                Jan Suraaj reserves the right to suspend or delete accounts found to
                 be in violation of these Terms.
               </p>
             </div>
@@ -159,7 +159,7 @@ function TermsOfService() {
               </h2>
               <p className="mt-2">
                 All content on the Platform — including logos, text, graphics,
-                AI algorithms, and software — is the property of WisOwl or its
+                AI algorithms, and software — is the property of Jan Suraaj or its
                 licensors.
               </p>
               <p className="mt-2">
@@ -174,7 +174,7 @@ function TermsOfService() {
                 <Eye className="w-5 h-5" /> 6. Privacy Policy
               </h2>
               <p className="mt-2">
-                Your use of WisOwl is also governed by our{" "}
+                Your use of Jan Suraaj is also governed by our{" "}
                 <a
                   href="/privacy-policy"
                   className="text-blue-600 hover:underline"
@@ -212,7 +212,7 @@ function TermsOfService() {
                 <Ban className="w-5 h-5" /> 8. Limitation of Liability
               </h2>
               <p className="mt-2">
-                WisOwl shall not be liable for indirect, incidental,
+                Jan Suraaj shall not be liable for indirect, incidental,
                 consequential damages, or loss of profits, data, or goodwill.
               </p>
               <p className="mt-2">

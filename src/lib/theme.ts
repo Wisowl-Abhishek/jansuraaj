@@ -1,5 +1,5 @@
 /**
- * WisOwl Brand Color System — single source of truth.
+ * Jan Suraaj Brand Color System — single source of truth.
  *
  * To retheme the entire app, change values here only.
  * CSS custom properties are defined in src/index.css (@theme / :root).
@@ -8,21 +8,23 @@
  */
 
 export const brandColors = {
-  /** Primary brand indigo — backgrounds, bars, panels */
-  indigo: '#1800ad',
-  /** Hover / lighter indigo — Soft Violet */
-  violet: '#2a10c7',
-  /** Muted indigo — pattern overlays, grid lines */
-  slate: '#1400a0',
-  /** Dark indigo — cinematic / dramatic backgrounds */
-  navy: '#0d1136',
-  /** Darkest indigo — ultra-dark backgrounds with vignette */
-  midnight: '#03051a',
-  /** Accent 1 — WisOwl Gold — CTA highlights, arrow icons */
-  gold: '#ffde59',
-  /** Accent 2 — WisOwl Amber — badges, starburst, star icons */
-  amber: '#febd59',
-  /** Text on indigo surfaces */
+  /** Primary brand dark — backgrounds, bars, panels */
+  indigo: '#1a1a1a',
+  /** Hover / lighter dark */
+  violet: '#2b2b2b',
+  /** Muted dark — pattern overlays, grid lines */
+  slate: '#242424',
+  /** Dark — cinematic / dramatic backgrounds */
+  navy: '#171717',
+  /** Darkest — ultra-dark backgrounds with vignette */
+  midnight: '#0a0a0a',
+  /** Accent 1 — Jan Suraaj Gold — CTA highlights, arrow icons */
+  gold: '#fdd34e',
+  /** Accent 2 — Deeper Gold — hover states, badges, starburst, star icons */
+  amber: '#e8bd42',
+  /** Accent 3 — Cream — light surfaces, section backgrounds, soft badges */
+  cream: '#fdf2d3',
+  /** Text on dark surfaces */
   white: '#ffffff',
 } as const;
 
@@ -44,7 +46,7 @@ export const brandGradients = {
 
 /** Box-shadow helpers */
 export const brandShadows = {
-  goldCta: `0 8px 32px rgba(255,222,89,.40)`,
-  indigoCta: `0 8px 32px rgba(24,0,173,.35)`,
-  goldButton: `0 4px 20px rgba(255,222,89,0.30)`,
+  goldCta: `0 8px 32px rgba(253,211,78,.40)`,
+  indigoCta: `0 8px 32px rgba(26,26,26,.35)`,
+  goldButton: `0 4px 20px rgba(253,211,78,0.30)`,
 } as const;

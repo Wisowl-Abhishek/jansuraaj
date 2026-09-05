@@ -33,7 +33,7 @@ useEffect(() => {
             Digital Service Delivery
           </h2>
           <p>
-            WisOwl provides digital services and credit-based solutions delivered electronically. This policy outlines our delivery procedures and timelines for all digital products and services.
+            Jan Suraaj provides digital services and credit-based solutions delivered electronically. This policy outlines our delivery procedures and timelines for all digital products and services.
           </p>
         </section>
 
@@ -44,10 +44,10 @@ useEffect(() => {
             Service Delivery Method
           </h2>
           <ul className="list-disc list-inside space-y-1">
-            <li>All WisOwl services are delivered digitally through our online platform.</li>
+            <li>All Jan Suraaj services are delivered digitally through our online platform.</li>
             <li>No physical products are shipped or mailed.</li>
             <li>Credits and services are typically activated immediately upon payment.</li>
-            <li>All purchases are linked to your registered WisOwl account.</li>
+            <li>All purchases are linked to your registered Jan Suraaj account.</li>
           </ul>
         </section>
 
@@ -114,7 +114,7 @@ useEffect(() => {
             Geographic Coverage
           </h2>
           <ul className="list-disc list-inside space-y-1">
-            <li>WisOwl digital services are available globally with no restrictions.</li>
+            <li>Jan Suraaj digital services are available globally with no restrictions.</li>
             <li>Services delivered to any location with internet access, 24/7.</li>
             <li>Regional variations may apply due to regulations, taxes, or payment methods.</li>
           </ul>
@@ -128,7 +128,7 @@ useEffect(() => {
           </h2>
           <ul className="list-disc list-inside space-y-1">
             <li>Stable internet connection required.</li>
-            <li>Valid WisOwl account with verified email.</li>
+            <li>Valid Jan Suraaj account with verified email.</li>
             <li>Modern browser (Chrome, Firefox, Safari, Edge).</li>
             <li>Email access to receive confirmations.</li>
             <li>Platform is web-based, mobile-friendly, cross-platform.</li>

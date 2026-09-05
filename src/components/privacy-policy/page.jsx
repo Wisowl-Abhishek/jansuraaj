@@ -33,7 +33,7 @@ useEffect(() => {
           </p>
 
           <p className="mb-6 ">
-            At <strong className="">WisOwl</strong> ("we", "our", or "us"), your
+            At <strong className="">Jan Suraaj</strong> ("we", "our", or "us"), your
             privacy is important to us. This Privacy Policy outlines how we
             collect, use, share, and protect your personal information when you
             use our AI-powered job search platform.
@@ -136,7 +136,7 @@ useEffect(() => {
                 <AlertTriangle className="w-5 h-5 " /> Children's Privacy
               </h2>
               <p className=" mt-2">
-                WisOwl is not intended for users under 16. We don’t knowingly
+                Jan Suraaj is not intended for users under 16. We don’t knowingly
                 collect data from children.
               </p>
             </div>

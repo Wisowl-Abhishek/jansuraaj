@@ -58,8 +58,8 @@
 
 //                 {/* Left: Logo */}
 //                 <Link href="https://www.wisowl.com/" className="flex items-center gap-3 group">
-//                     <img src="/wisowl.svg" alt="WisOwl Logo" className="w-8 h-8 object-contain brightness-0 invert" />
-//                     <span className="text-2xl font-bold text-white tracking-tight">WisOwl</span>
+//                     <img src="/wisowl.svg" alt="Jan Suraaj Logo" className="w-8 h-8 object-contain brightness-0 invert" />
+//                     <span className="text-2xl font-bold text-white tracking-tight">Jan Suraaj</span>
 //                 </Link>
 
 //                 {/* Center: Navigation Links */}
@@ -157,7 +157,7 @@
 
 //                                     {/* Footer */}
 //                                     <div className="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between">
-//                                         <span className="text-xs text-gray-400">Explore 4L+ jobs on WisOwl</span>
+//                                         <span className="text-xs text-gray-400">Explore 4L+ jobs on Jan Suraaj</span>
 //                                         <button
 //                                             className="text-xs font-semibold text-blue-600 hover:text-blue-800 transition-colors"
 //                                             onClick={(e) => {

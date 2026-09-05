@@ -46,7 +46,7 @@ const FindJobsFaster = () => (
     <div className="max-w-7xl mx-auto px-4">
       
       <h2 className="text-3xl sm:text-4xl font-bold text-center leading-tight">
-        Find Jobs Faster and Smarter with WisOwl
+        Find Jobs Faster and Smarter with Jan Suraaj Job Portal
       </h2>
       <p className="mt-3 text-gray-600 text-center text-lg">
         Speed Up Your Search. Land the Right Job.
