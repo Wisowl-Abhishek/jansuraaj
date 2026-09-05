@@ -41,13 +41,12 @@ const Hero = ({ setShowSignin }) => {
                     Employment is a right, not a favor. Jan Suraaj's job portal brings every opportunity to your fingertips — because a working Bihar is a Suraaj Bihar.
                 </div>
 
-                <div className="hero__feature-list mb-6 sm:mb-8 text-sm sm:text-md">
-                    <ul>
-                        <li className=' text-md sm:text-lg'>All Jobs at One Place</li>
-                        <li className=' text-md sm:text-lg'>Made for Every Job Seeker</li>
-                        <li className=' text-md sm:text-lg'>Always Free</li>
-                    </ul>
-                </div>
+                <button
+                    onClick={() => window.open(`${appUrl}/signup`, "_blank")}
+                    className="inline-flex items-center justify-center bg-brand-gold text-brand-midnight px-9 py-4 rounded-full text-base font-bold transition-all hover:bg-brand-amber hover:-translate-y-0.5"
+                >
+                    Sign Up Free
+                </button>
             </div>
         </section>
     )

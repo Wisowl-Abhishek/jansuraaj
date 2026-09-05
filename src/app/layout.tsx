@@ -119,15 +119,6 @@ export default function RootLayout({
         <TrackingHandler />
         <AuthContextProvider>{children}</AuthContextProvider>
 
-        {/* WhatsApp Widget */}
-        <Script
-          type="text/javascript"
-          src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
-          id="aisensy-wa-widget"
-          widget-id="aaap8l"
-          strategy="afterInteractive"
-        />
-
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XW41BDPDN4"

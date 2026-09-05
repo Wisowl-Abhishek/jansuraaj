@@ -46,7 +46,7 @@ const FooterNext = () => {
 
           <div className="flex gap-4">
             <a
-              href="https://www.facebook.com/share/1BjufuYZqt/?mibextid=wwXIfr"
+              href="https://www.facebook.com/jansuraajofficial"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#3b82f6] transition text-white"
@@ -55,7 +55,7 @@ const FooterNext = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/company/wisowl/"
+              href="https://www.linkedin.com/company/jansuraaj/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#0e76a8] transition text-white"
@@ -64,7 +64,7 @@ const FooterNext = () => {
             </a>
 
             <a
-              href="https://www.instagram.com/thewisowl"
+              href="https://www.instagram.com/jansuraajofficial"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#e1306c] transition text-white"
@@ -73,7 +73,7 @@ const FooterNext = () => {
             </a>
 
             <a
-              href="https://www.youtube.com/@thewisowl"
+              href="https://www.youtube.com/@JanSuraaj_"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#ff0000] transition text-white"
@@ -82,7 +82,7 @@ const FooterNext = () => {
             </a>
 
             <a
-              href="https://x.com/Wisowlai"
+              href="https://x.com/jansuraajonline"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#ff0000] transition text-white"

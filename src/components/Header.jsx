@@ -77,7 +77,7 @@ const Header = () => {
           label="For Recruiters"
           onClick={() => {
             GAHandleClick("ClickEmployerButtonNav", "LandingPage");
-            window.open(`/recruiter-lp`, "_self");
+            window.open(`${appUrl}/recruiter/signup`, "_blank");
           }}
         />
       ) : (
