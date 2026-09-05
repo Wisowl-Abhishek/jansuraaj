@@ -1,7 +1,5 @@
 import React from 'react';
 import { UserAuth } from "../../context/AuthContext";
-import HeroSearchJobBar from './HeroSearchJobBar';
-import EyeFollowOwl from '../EyeFollowOwl';
 
 const Hero = ({ setShowSignin }) => {
     const { appUrl } = UserAuth();
@@ -23,37 +21,31 @@ const Hero = ({ setShowSignin }) => {
                     "radial-gradient(circle, #fdd34e 0%, transparent 70%)",
                 }}
             />
-            
+
             <div className="container text-center text-white relative z-20">
 
                 <div className="hero__logo">
-                        {/* <EyeFollowOwl /> */}
                         <img src="/jansuraajlogo.png" alt="logo" className="mx-auto" />
                 </div>
 
                 <div className="hero__trusted-line text-brand-gold font-normal mb-3 text-sm sm:text-lg">
-                    Join 1000+ job seekers who landed their dream jobs
+                    Join job seekers empowered by Jan Suraaj
                 </div>
 
-                <h1 className="hero__tag-line first-letter mb-8">Find Your Dream Job <br />
-                    <i className='text-brand-gold'>3x Faster</i> with AI
+                <h1 className="hero__tag-line first-letter mb-8">
+                    <span className="block text-brand-gold">Rozgar Nahi, Adhikar Hai</span>
+                    Find Your Dream Job <br /> with Jan Suraaj
                 </h1>
 
-                <div className='max-w-5xl mx-auto mb-4 sm:mb-8'>
-                    <HeroSearchJobBar />
-                </div>
-
-                <div className='text-md sm:text-2xl leading-6 sm:leading-9 mb-8 sm:mb-5'>
-                    Stop wasting time on endless job apps.<br />
-                    Find perfect job matches using AI.
+                <div className='text-md sm:text-2xl leading-6 sm:leading-9 mb-8 sm:mb-5 max-w-3xl mx-auto'>
+                    Employment is a right, not a favor. Jan Suraaj's job portal brings every opportunity to your fingertips — because a working Bihar is a Suraaj Bihar.
                 </div>
 
                 <div className="hero__feature-list mb-6 sm:mb-8 text-sm sm:text-md">
                     <ul>
                         <li className=' text-md sm:text-lg'>All Jobs at One Place</li>
-                        <li className=' text-md sm:text-lg'>Personalised Jobs</li>
-                        {/* <li className=' text-md sm:text-lg'>AI Resume Builder</li> */}
-                        {/* <li>Auto Apply*</li> */}
+                        <li className=' text-md sm:text-lg'>Made for Every Job Seeker</li>
+                        <li className=' text-md sm:text-lg'>Always Free</li>
                     </ul>
                 </div>
             </div>

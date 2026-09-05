@@ -34,16 +34,16 @@ export const metadata: Metadata = {
   authors: [{ name: "Jan Suraaj Team" }],
   robots: "index, follow",
   alternates: {
-    canonical: "https://wisowl.com",
+    canonical: "https://www.jansuraaj.org/",
   },
   openGraph: {
     title: "Jan Suraaj - Find Your Dream Job 3x Faster.",
     description:
       "AI job matching and personalized recommendations for candidates. Smart hiring tools and automated shortlisting for recruiters. Jan Suraaj is your all-in-one recruitment system.",
-    url: "https://wisowl.com",
+    url: "https://www.jansuraaj.org/",
     type: "website",
     images: [
-      "https://service.wisowl.com/storage/v1/object/public/assets//OG.png",
+      "https://service.wisowl.com/storage/v1/object/public/assets/Jansuraaj%20party%20logo.jpeg",
     ],
     siteName: "Jan Suraaj",
   },
@@ -53,10 +53,10 @@ export const metadata: Metadata = {
     description:
       "Get hired faster with AI-powered job matching. Recruit smarter with automated candidate shortlisting. Discover Jan Suraaj - the future of recruitment in India.",
     images: [
-      "https://service.wisowl.com/storage/v1/object/public/assets//OG.png",
+      "https://service.wisowl.com/storage/v1/object/public/assets/Jansuraaj%20party%20logo.jpeg",
     ],
-    site: "@wisowl",
-    creator: "@wisowl",
+    site: "@jansuraaj",
+    creator: "@jansuraaj",
   },
   icons: {
     icon: [

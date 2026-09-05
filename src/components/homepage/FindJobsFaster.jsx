@@ -11,32 +11,32 @@ import {
 const steps = [
   {
     title: "All Jobs in One Place",
-    desc: "Aggregates 100K+ jobs daily from top portals — no more jumping between tabs.",
+    desc: "Aggregates jobs daily from across India — no more running from portal to portal.",
     icon: <Briefcase className="w-10 h-10 text-brand-amber" />,
   },
   {
-    title: "Smarter Job Matching",
-    desc: "AI surfaces jobs that actually fit your skills, not just keywords.",
+    title: "Matched to You",
+    desc: "Smart filtering that understands your skills and experience, so every result actually fits.",
     icon: <Sparkles className="w-10 h-10 text-brand-amber" />,
   },
-  {
-    title: "Resume Builder",
-    desc: "Optimize your resume to stand out — with AI-powered suggestions.",
-    icon: <FileText className="w-10 h-10 text-brand-amber" />,
-  },
-  {
-    title: "Auto Apply (Coming Soon)",
-    desc: "Apply to multiple matched jobs in seconds, automatically.",
-    icon: <Rocket className="w-10 h-10 text-brand-amber" />,
-  },
-  {
-    title: "Daily Job Alerts",
-    desc: "Daily personalized alerts so you never miss a high-match opportunity.",
-    icon: <Bell className="w-10 h-10 text-brand-amber" />,
-  },
+  // {
+  //   title: "Resume Builder",
+  //   desc: "Optimize your resume to stand out — with AI-powered suggestions.",
+  //   icon: <FileText className="w-10 h-10 text-brand-amber" />,
+  // },
+  // {
+  //   title: "Auto Apply (Coming Soon)",
+  //   desc: "Apply to multiple matched jobs in seconds, automatically.",
+  //   icon: <Rocket className="w-10 h-10 text-brand-amber" />,
+  // },
+  // {
+  //   title: "Daily Job Alerts",
+  //   desc: "Get notified the moment a relevant opportunity opens up — never miss your chance.",
+  //   icon: <Bell className="w-10 h-10 text-brand-amber" />,
+  // },
   {
     title: "Dedicated Support",
-    desc: "Get guidance for interviews, resumes, job search decisions and more.",
+    desc: "Guidance for interviews, resumes, and career decisions — from people invested in your future, not just your data.",
     icon: <LifeBuoy className="w-10 h-10 text-brand-amber" />,
   },
 ];
@@ -44,12 +44,12 @@ const steps = [
 const FindJobsFaster = () => (
   <section className="bg-white text-black py-16">
     <div className="max-w-7xl mx-auto px-4">
-      
+
       <h2 className="text-3xl sm:text-4xl font-bold text-center leading-tight">
-        Find Jobs Faster and Smarter with Jan Suraaj Job Portal
+        Real Jobs. Real Governance. Real Change.
       </h2>
       <p className="mt-3 text-gray-600 text-center text-lg">
-        Speed Up Your Search. Land the Right Job.
+        Jan Suraaj believes every youth deserves a fair shot at work — this portal is that promise, in action.
       </p>
 
       {/* ✅ Icon Cards */}
