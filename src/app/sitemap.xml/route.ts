@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export const dynamic = "force-static";
 
-const BASE_URL = "https://wisowl.com";
+const BASE_URL = "https://jansuraaj.wisowl.com";
 const TODAY = new Date().toISOString().split("T")[0];
 
 const PAGES = [
