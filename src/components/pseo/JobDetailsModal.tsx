@@ -164,7 +164,7 @@ Requirements:
 
                             // 2. Redirect to the direct job URL on the main application.
                             // The app's internal middleware will handle auth states (logged-in, guest, new user).
-                            let appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://app.wisowl.com";
+                            let appUrl = process.env.NEXT_PUBLIC_APP_URL || "http://jansuraajapp.wisowl.com";
                             if (appUrl.endsWith('/')) appUrl = appUrl.slice(0, -1);
                             
                             const jobUrl = new URL(`${appUrl}/jobs/${job.id}`);

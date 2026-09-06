@@ -67,7 +67,7 @@ export function RightSidebar({ marketSnapshot, salaryRange, jobCount, role, loca
                     </h3>
                 </div>
                 <a
-                    href={`${process.env.NEXT_PUBLIC_APP_URL || 'https://app.wisowl.com'}/resume-builder`}
+                    href={`${process.env.NEXT_PUBLIC_APP_URL || 'http://jansuraajapp.wisowl.com'}/resume-builder`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full text-center text-xs font-semibold text-brand-midnight  bg-brand-gold rounded-full py-3 hover:opacity-90 transition-all duration-200 shadow-md hover:shadow-lg"

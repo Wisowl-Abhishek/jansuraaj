@@ -53,7 +53,7 @@ export default function ResumeEnhancerPage() {
                     event_category: "RELandingPage",
                    });
                   }
-                  window.open(`${process.env.NEXT_PUBLIC_APP_URL || "https://app.wisowl.com"}/resume-builder`, "_blank")}
+                  window.open(`${process.env.NEXT_PUBLIC_APP_URL || "http://jansuraajapp.wisowl.com"}/resume-builder`, "_blank")}
                 }
                  />
               </div>
@@ -349,7 +349,7 @@ export default function ResumeEnhancerPage() {
                 event_category: "RELandingPage",
                });
               }
-              window.open(`${process.env.NEXT_PUBLIC_APP_URL || "https://app.wisowl.com"}/resume-builder`, "_blank")}
+              window.open(`${process.env.NEXT_PUBLIC_APP_URL || "http://jansuraajapp.wisowl.com"}/resume-builder`, "_blank")}
               }
               >
             Get Started Now

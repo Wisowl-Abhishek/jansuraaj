@@ -31,7 +31,7 @@ const Header = () => {
   const currentPath = (pathname || "").replace(/\/$/, "") || "/";
 
   const context = UserAuth();
-  const appUrl = context?.appUrl || "https://app.wisowl.com/";
+  const appUrl = context?.appUrl || "http://jansuraajapp.wisowl.com/";
 
   const isRecruiterPage = currentPath === "/recruiter-lp";
 

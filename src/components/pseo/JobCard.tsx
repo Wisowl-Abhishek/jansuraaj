@@ -178,7 +178,7 @@ export function JobCard({ id, role, company, location, salary, experience, tags,
                                         queryParams.set("utm_source", "wisowl_pso");
                                     }
 
-                                    const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://app.wisowl.com";
+                                    const appUrl = process.env.NEXT_PUBLIC_APP_URL || "http://jansuraajapp.wisowl.com";
                                     const baseUrl = appUrl.endsWith('/') ? appUrl.slice(0, -1) : appUrl;
                                     window.location.href = `${baseUrl}/jobs/${id}?${queryParams.toString()}`;
                                 }}

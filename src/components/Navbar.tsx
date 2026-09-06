@@ -195,7 +195,7 @@
 //                                                     document.cookie = `utm_data=${encodeURIComponent(JSON.stringify(utmData))}${domainAttr};path=/;max-age=2592000`;
 //                                                 } catch (err) {}
                                                 
-//                                                 let targetAppUrl = process.env.NEXT_PUBLIC_APP_URL || "https://app.wisowl.com";
+//                                                 let targetAppUrl = process.env.NEXT_PUBLIC_APP_URL || "http://jansuraajapp.wisowl.com";
 //                                                 if (targetAppUrl.endsWith('/')) targetAppUrl = targetAppUrl.slice(0, -1);
 //                                                 const targetUrl = new URL(`${targetAppUrl}/jobs`);
 //                                                 queryParams.forEach((value, key) => {

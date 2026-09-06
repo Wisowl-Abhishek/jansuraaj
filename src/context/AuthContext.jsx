@@ -6,7 +6,7 @@ export const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
 
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://app.wisowl.com/";
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL || "http://jansuraajapp.wisowl.com/";
 
 
   return (

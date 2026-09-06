@@ -63,7 +63,7 @@ const PackComparison = ({className, heading, subheading, event_category}) => {
                   event_category: `${event_category}`
                 });
                 }
-                window.open("https://app.wisowl.com/resume-builder", "_blank")}
+                window.open("http://jansuraajapp.wisowl.com/resume-builder", "_blank")}
               }
               className="mt-8 bg-brand-gold text-black font-semibold py-3 px-8 rounded-full shadow-md hover:shadow-lg hover:scale-[1.02] transition-all"
             >
