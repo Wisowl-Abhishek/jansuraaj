@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import Button from "./common/Button";
 import { UserAuth } from "../context/AuthContext";
-import { usePathname } from "next/navigation";
 
 const shimmerButtonClass =
   "before:absolute before:inset-0 before:rounded-[inherit] before:pointer-events-none " +
@@ -27,13 +26,8 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const pathname = usePathname();
-  const currentPath = (pathname || "").replace(/\/$/, "") || "/";
-
   const context = UserAuth();
   const appUrl = context?.appUrl || "http://jansuraajapp.wisowl.com/";
-
-  const isRecruiterPage = currentPath === "/recruiter-lp";
 
   const GAHandleClick = (action, category) => {
     if (typeof window !== "undefined" && window.gtag) {
@@ -44,7 +38,7 @@ const Header = () => {
   return (
     <header
       id="header_navbar"
-      className={`fixed top-4 sm:top-6 right-4 sm:right-6 z-30 flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2.5 rounded-full bg-black/20 backdrop-blur shadow-md ${shimmerButtonClass} ${currentPath === "/" || currentPath === "/recruiter-lp" ? "" : "innerpage-nav"}`}
+      className={`fixed top-4 sm:top-6 right-4 sm:right-6 z-30 flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2.5 rounded-full bg-black/20 backdrop-blur shadow-md ${shimmerButtonClass}`}
     >
       <div className="relative z-10 flex items-center gap-1.5 sm:gap-2">
       <Button
@@ -52,11 +46,7 @@ const Header = () => {
         label="Login"
         onClick={() => {
           GAHandleClick("ClickLoginButtonNav", "LandingPage");
-          if (isRecruiterPage) {
-            window.open(`${appUrl}/recruiter/signin`, "_blank");
-          } else {
-            window.open(`${appUrl}/signin`, "_blank");
-          }
+          window.open(`${appUrl}/signin`, "_blank");
         }}
       />
       <Button
@@ -64,32 +54,17 @@ const Header = () => {
         label="Register"
         onClick={() => {
           GAHandleClick("ClickSignupButtonNav", "LandingPage");
-          if (isRecruiterPage) {
-            window.open(`${appUrl}/recruiter/signup`, "_blank");
-          } else {
-            window.open(`${appUrl}/signup`, "_blank");
-          }
+          window.open(`${appUrl}/signup`, "_blank");
         }}
       />
-      {!isRecruiterPage ? (
-        <Button
-          className="text-white outline-none border border-white/30 bg-transparent hover:border-white/50 py-2 px-3 sm:px-4 rounded-lg text-xs sm:text-sm"
-          label="For Recruiters"
-          onClick={() => {
-            GAHandleClick("ClickEmployerButtonNav", "LandingPage");
-            window.open(`${appUrl}/recruiter/signup`, "_blank");
-          }}
-        />
-      ) : (
-        <Button
-          className="text-white outline-none border border-white/30 bg-transparent hover:border-white/50 py-2 px-3 sm:px-4 rounded-lg text-xs sm:text-sm"
-          label="For Candidates"
-          onClick={() => {
-            GAHandleClick("ClickCandidateButtonNav", "LandingPage");
-            window.open(`/?v=c`, "_self");
-          }}
-        />
-      )}
+      <Button
+        className="text-white outline-none border border-white/30 bg-transparent hover:border-white/50 py-2 px-3 sm:px-4 rounded-lg text-xs sm:text-sm"
+        label="For Recruiters"
+        onClick={() => {
+          GAHandleClick("ClickEmployerButtonNav", "LandingPage");
+          window.open(`${appUrl}/recruiter/signup`, "_blank");
+        }}
+      />
       </div>
     </header>
   );

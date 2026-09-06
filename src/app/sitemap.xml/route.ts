@@ -6,8 +6,7 @@ const BASE_URL = "https://jansuraaj.wisowl.com";
 const TODAY = new Date().toISOString().split("T")[0];
 
 const PAGES = [
-  { path: "/",              changefreq: "daily", priority: "1.0" },
-  { path: "/recruiter-lp",  changefreq: "weekly", priority: "0.9" },
+  { path: "/", changefreq: "daily", priority: "1.0" },
 ];
 
 export async function GET() {

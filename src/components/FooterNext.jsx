@@ -31,7 +31,7 @@ const FooterNext = () => {
         <div className="flex items-center gap-8">
           <Link href="https://www.jansuraaj.org/" className="text-white hover:text-brand-gold flex items-center gap-2 transition" target="_blank" rel="noopener noreferrer">
             <Building2 className="w-4 h-4" />
-            The Company
+            About Us
           </Link>
 
           <Link href="https://www.jansuraaj.org/contact" className="text-white hover:text-brand-gold flex items-center gap-2 transition" target="_blank" rel="noopener noreferrer">
