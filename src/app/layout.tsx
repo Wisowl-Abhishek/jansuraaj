@@ -129,14 +129,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XW41BDPDN4', {
-              cookie_domain: '.wisowl.com',
-              send_page_view: true,
-              page_path: window.location.pathname,
-              linker: {
-                domains: ['wisowl.com', 'app.wisowl.com']
-              }
-            });
+            gtag('config', 'G-XW41BDPDN4');
           `}
         </Script>
 

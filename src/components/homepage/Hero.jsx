@@ -42,7 +42,12 @@ const Hero = ({ setShowSignin }) => {
                 </div>
 
                 <button
-                    onClick={() => window.open(`${appUrl}/signup`, "_blank")}
+                    onClick={() => {
+                        if (typeof window !== "undefined" && window.gtag) {
+                            window.gtag("event", "ClickSignUpFreeButtonHero", { event_category: "LandingPage" });
+                        }
+                        window.open(`${appUrl}/signup`, "_blank");
+                    }}
                     className="inline-flex items-center justify-center bg-brand-gold text-brand-midnight px-9 py-4 rounded-full text-base font-bold transition-all hover:bg-brand-amber hover:-translate-y-0.5"
                 >
                     Sign Up Free
