@@ -8,7 +8,7 @@ const MainLayout = ({
 }) => {
   return (
     <>
-      <div className="gap-10 relative overflow-hidden home-gradient pb-[70px] sm:pb-[70px] pt-[80px] sm:pt-[80px]">
+      <div className="gap-10 relative overflow-hidden home-gradient pb-[120px] sm:pb-[120px] pt-[140px] sm:pt-[140px]">
         <div className='absolute bottom-0 right-0'>
             <img src="/pk1.png" alt="hero-owl" className='w-[750px] opacity-20' />
         </div>

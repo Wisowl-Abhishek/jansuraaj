@@ -29,16 +29,15 @@ const Hero = ({ setShowSignin }) => {
                 </div>
 
                 <div className="hero__trusted-line text-brand-gold font-normal mb-3 text-sm sm:text-lg">
-                    Join job seekers empowered by Jan Suraaj
+                    Your job search, empowered by Jan Suraaj
                 </div>
 
-                <h1 className="hero__tag-line first-letter mb-8">
-                    <span className="block text-brand-gold">Rozgar Nahi, Adhikar Hai</span>
+                <h1 className="hero__tag-line first-letter mb-4">
                     Find Your Dream Job <br /> with Jan Suraaj
                 </h1>
 
-                <div className='text-md sm:text-2xl leading-6 sm:leading-9 mb-8 sm:mb-5 max-w-3xl mx-auto'>
-                    Employment is a right, not a favor. Jan Suraaj's job portal brings every opportunity to your fingertips — because a working Bihar is a Suraaj Bihar.
+                <div className='text-md sm:text-2xl leading-6 sm:leading-9 mb-8 sm:mb-8 max-w-3xl mx-auto'>
+                    Employment is not just a promise, it's a vision. Jan Suraaj's job portal brings every opportunity to your fingertips.
                 </div>
 
                 <button
