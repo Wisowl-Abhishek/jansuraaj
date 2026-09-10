@@ -1,8 +1,10 @@
 import React from 'react';
 import { UserAuth } from "../../context/AuthContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 const Hero = ({ setShowSignin }) => {
     const { appUrl } = UserAuth();
+    const { t, language } = useLanguage();
 
     return (
         <section className="hero relative">
@@ -29,15 +31,17 @@ const Hero = ({ setShowSignin }) => {
                 </div>
 
                 <div className="hero__trusted-line text-brand-gold font-normal mb-3 text-sm sm:text-lg">
-                    Your job search, empowered by Jan Suraaj
+                    {t.hero.tagline}
                 </div>
 
-                <h1 className="hero__tag-line first-letter mb-4">
-                    Find Your Dream Job <br /> with Jan Suraaj
+                <h1 className={`hero__tag-line first-letter mb-4 ${language === "hi" ? "hero__tag-line--hi" : ""}`}>
+                    {t.hero.headlineLine1}
+                    <br />
+                    {t.hero.headlineLine2}
                 </h1>
 
                 <div className='text-md sm:text-2xl leading-6 sm:leading-9 mb-8 sm:mb-8 max-w-3xl mx-auto'>
-                    Employment is not just a promise, it's a vision. Jan Suraaj's job portal brings every opportunity to your fingertips.
+                    {t.hero.subheadline}
                 </div>
 
                 <button
@@ -49,7 +53,7 @@ const Hero = ({ setShowSignin }) => {
                     }}
                     className="inline-flex items-center justify-center bg-brand-gold text-brand-midnight px-9 py-4 rounded-full text-base font-bold transition-all hover:bg-brand-amber hover:-translate-y-0.5"
                 >
-                    Sign Up Free
+                    {t.hero.cta}
                 </button>
             </div>
         </section>

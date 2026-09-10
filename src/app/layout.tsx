@@ -4,6 +4,7 @@ import "./globals.css";
 import "../assets/css/main.scss";
 // import { Navbar } from "@/components/Navbar";
 import { AuthContextProvider } from "@/context/AuthContext";
+import { LanguageProvider } from "@/context/LanguageContext";
 import Script from "next/script";
 import { TrackingHandler } from "@/components/TrackingHandler";
 
@@ -26,9 +27,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Jan Suraaj - Find Your Dream Job 3x Faster.",
+  title: "जन सुराज - अपनी सपनों की नौकरी 3 गुना तेज़ पाएं",
   description:
-    "Jan Suraaj uses AI to match candidates with jobs, automate hiring, and deliver smart job alerts. Personal Assistant for job seekers. Powerful for recruiters.",
+    "जन सुराज AI का उपयोग कर उम्मीदवारों को नौकरियों से जोड़ता है, भर्ती को स्वचालित करता है और स्मार्ट जॉब अलर्ट देता है। नौकरी खोजने वालों के लिए व्यक्तिगत सहायक। भर्तीकर्ताओं के लिए शक्तिशाली।",
   keywords:
     "AI job matching, job recommendation engine, job search automation, smart job alerts, best job portal in india, job portal, find jobs, resume-based job recommendations, personalized job search, AI for recruitment, automated candidate matching, AI hiring tools, smart recruitment software, job portal for recruiters, hire faster with AI, AI shortlisting platform, AI job portal India, AI-based job platform, job application tracking, machine learning jobs platform, AI-driven hiring solution, one-stop job portal, all-in-one recruitment system",
   authors: [{ name: "Jan Suraaj Team" }],
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
     canonical: "https://www.jansuraaj.org/",
   },
   openGraph: {
-    title: "Jan Suraaj - Find Your Dream Job 3x Faster.",
+    title: "जन सुराज - अपनी सपनों की नौकरी 3 गुना तेज़ पाएं",
     description:
-      "AI job matching and personalized recommendations for candidates. Smart hiring tools and automated shortlisting for recruiters. Jan Suraaj is your all-in-one recruitment system.",
+      "जन सुराज AI का उपयोग कर उम्मीदवारों को नौकरियों से जोड़ता है, भर्ती को स्वचालित करता है और स्मार्ट जॉब अलर्ट देता है। नौकरी खोजने वालों के लिए व्यक्तिगत सहायक। भर्तीकर्ताओं के लिए शक्तिशाली।",
     url: "https://www.jansuraaj.org/",
     type: "website",
     images: [
@@ -49,9 +50,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jan Suraaj - Find Your Dream Job 3x Faster.",
+    title: "जन सुराज - अपनी सपनों की नौकरी 3 गुना तेज़ पाएं",
     description:
-      "Get hired faster with AI-powered job matching. Recruit smarter with automated candidate shortlisting. Discover Jan Suraaj - the future of recruitment in India.",
+      "जन सुराज AI का उपयोग कर उम्मीदवारों को नौकरियों से जोड़ता है, भर्ती को स्वचालित करता है और स्मार्ट जॉब अलर्ट देता है। नौकरी खोजने वालों के लिए व्यक्तिगत सहायक। भर्तीकर्ताओं के लिए शक्तिशाली।",
     images: [
       "https://service.wisowl.com/storage/v1/object/public/assets/Jansuraaj%20party%20logo.jpeg",
     ],
@@ -68,7 +69,7 @@ export const metadata: Metadata = {
   },
   other: {
     "msapplication-TileColor": "#ffffff",
-    language: "en",
+    language: "hi",
   },
 };
 
@@ -78,7 +79,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${poppins.variable}`}>
+    <html lang="hi" suppressHydrationWarning className={`${inter.variable} ${poppins.variable}`}>
       <head>
         {/* Performance: Preconnect & DNS Prefetch */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -117,7 +118,9 @@ export default function RootLayout({
       </head>
       <body>
         <TrackingHandler />
-        <AuthContextProvider>{children}</AuthContextProvider>
+        <LanguageProvider>
+          <AuthContextProvider>{children}</AuthContextProvider>
+        </LanguageProvider>
 
         {/* Google Analytics */}
         <Script

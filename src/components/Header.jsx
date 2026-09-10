@@ -1,7 +1,9 @@
 "use client";
 import React, { useEffect } from "react";
 import Button from "./common/Button";
+import LanguageSwitcher from "./common/LanguageSwitcher";
 import { UserAuth } from "../context/AuthContext";
+import { useLanguage } from "../context/LanguageContext";
 
 const shimmerButtonClass =
   "before:absolute before:inset-0 before:rounded-[inherit] before:pointer-events-none " +
@@ -29,6 +31,8 @@ const Header = () => {
   const context = UserAuth();
   const appUrl = context?.appUrl || "http://jansuraajapp.wisowl.com/";
 
+  const { t } = useLanguage();
+
   const GAHandleClick = (action, category) => {
     if (typeof window !== "undefined" && window.gtag) {
       window.gtag("event", action, { event_category: category });
@@ -43,7 +47,7 @@ const Header = () => {
       <div className="relative z-10 flex items-center gap-1.5 sm:gap-2">
       <Button
         className="text-white outline-none border border-white/50 bg-transparent hover:border-white/30 py-2 px-3 sm:px-5 rounded-lg text-xs sm:text-sm"
-        label="Login"
+        label={t.nav.login}
         onClick={() => {
           GAHandleClick("ClickLoginButtonNav", "LandingPage");
           window.open(`${appUrl}/signin`, "_blank");
@@ -51,7 +55,7 @@ const Header = () => {
       />
       <Button
         className="text-brand-midnight bg-brand-gold hover:border-transparent border border-brand-gold py-2 px-3 sm:px-5 rounded-lg font-semibold text-xs sm:text-sm"
-        label="Register"
+        label={t.nav.register}
         onClick={() => {
           GAHandleClick("ClickSignupButtonNav", "LandingPage");
           window.open(`${appUrl}/signup`, "_blank");
@@ -59,12 +63,13 @@ const Header = () => {
       />
       <Button
         className="text-white outline-none border border-white/30 bg-transparent hover:border-white/50 py-2 px-3 sm:px-4 rounded-lg text-xs sm:text-sm"
-        label="For Recruiters"
+        label={t.nav.forRecruiters}
         onClick={() => {
           GAHandleClick("ClickEmployerButtonNav", "LandingPage");
           window.open(`${appUrl}/recruiter/signup`, "_blank");
         }}
       />
+      <LanguageSwitcher />
       </div>
     </header>
   );

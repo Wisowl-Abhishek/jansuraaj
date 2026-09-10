@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Facebook,
   Instagram,
@@ -7,8 +9,12 @@ import {
   Phone,
 } from "lucide-react";
 import Link from "next/link";
+import LanguageSwitcher from "./common/LanguageSwitcher";
+import { useLanguage } from "../context/LanguageContext";
 
 const FooterNext = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="text-gray-300 px-6 py-10 border-t border-white/10 bg-black">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-sm text-white">
@@ -23,7 +29,7 @@ const FooterNext = () => {
             className="rounded-full"
           />
           <p className="text-xs text-gray-400">
-            © {new Date().getFullYear()} Jan Suraaj. All rights reserved.
+            © {new Date().getFullYear()} {t.footer.rights}
           </p>
         </div>
 
@@ -31,18 +37,20 @@ const FooterNext = () => {
         <div className="flex items-center gap-8">
           <Link href="https://www.jansuraaj.org/" className="text-white hover:text-brand-gold flex items-center gap-2 transition" target="_blank" rel="noopener noreferrer">
             <Building2 className="w-4 h-4" />
-            About Us
+            {t.footer.aboutUs}
           </Link>
 
           <Link href="https://www.jansuraaj.org/contact" className="text-white hover:text-brand-gold flex items-center gap-2 transition" target="_blank" rel="noopener noreferrer">
             <Phone className="w-4 h-4" />
-            Contact
+            {t.footer.contact}
           </Link>
+
+          <LanguageSwitcher />
         </div>
 
         {/* Social Icons */}
         <div className="flex flex-col items-center md:items-end gap-3">
-          <p className="text-xs text-gray-400">Connect with us:</p>
+          <p className="text-xs text-gray-400">{t.footer.connect}</p>
 
           <div className="flex gap-4">
             <a
